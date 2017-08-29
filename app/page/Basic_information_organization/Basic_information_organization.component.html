@@ -1,0 +1,88 @@
+<div class="origanizationBigBox">
+	<!--左边的内容-->
+	<div class="origanizationBigBoxLeft">
+		<div class="origanizationBigHeader">
+	        <label>机构名称：</label>
+	    </div>
+		<div class="origanizationBigBoxLeftHeader">
+	        <label class="name">机构名称：</label>
+	        <div class="txt">
+	             <img src="images/search.png" />
+	             <input class="text" type="text" placeholder="机构名称" [(ngModel)]="searchWord"/>
+	        </div>
+	        <div class="searchName" (click)="search()">搜索</div>
+	    </div>
+	    <!--表格-->
+	   <div class="tableBox">
+	    	<table class="tableContent">
+	    		<tbody>
+	    			<tr class="trHeader">
+	    				<td class="organizationNametd">机构名称</td>
+	    				<td class="healthCare">医保干预</td>
+	    			</tr>
+	    			<tr class="trHeadertable" *ngFor="let optRecipe of optRecipeList;let i = index;">
+	    				<td class="organizationNametd02" (click)=choose(optRecipeList[i].hospitalId,i)>{{optRecipe.hospitalName}}</td>
+	    				<td class="healthCare02">
+	    					<a *ngIf="!optRecipe.isShow" (click)=open(optRecipe,i)>
+	    						<img src="images/open.png" />
+	    					</a>
+	    					<a *ngIf="optRecipe.isShow" (click)=close(optRecipe,i)>
+	    						<img src="images/close.png" />
+	    					</a>
+	    				</td>
+	    			</tr>
+	    		</tbody>
+	    	</table>
+	    </div>
+    </div>
+    <!--右边的内容-->
+    <div class="origanizationBigBoxRight">
+	    <div class="origanizationBigHeader">
+	        <label>浙江省人民医院：</label>
+	    </div>
+		<div class="origanizationBigBoxLeftHeader">
+	        <label class="name">医保干预：</label>
+	        <div class="txt tex02">
+	            <select class="controlSelect">
+	            	<option>全部</option>
+	            	<option>开启</option>
+	            	<option>关闭</option>
+	            </select>
+	            <span class="source">科室来源:</span>
+	            <select class="controlSelect">
+	            	<option>全部</option>
+	            	<option>门诊</option>
+	            	<option>急诊</option>
+	            	<option>住院</option>
+	            </select>
+	            <span class="source">科室名称:</span>
+	            <input type="text" class="departmentsName" />
+	        </div>
+	        <div class="searchName">搜索</div>
+	    </div>
+	    <!--表格-->
+	   <div class="tableBox02">
+	    	<table class="officeTable">
+	    		<tbody>
+	    			<tr class="trHeader02">
+	    				<td class="organizationNametd03">科室名称</td>
+	    				<td class="deparment">部门</td>
+	    				<td class="healthCare03">医保干预</td>
+	    			</tr>
+	    			<tr class="trHeadertable02" *ngFor="let obj of officeDataList;let i = index;">
+	    				<td class="organizationNametd03">{{obj.orgName}}</td>
+	    				<td class="deparment">{{obj.department}}</td>
+	    				<td class="healthCare03">
+	    					<a (click)="isTextShow=false;isShow=true" *ngIf="isShow">
+	    						<img src="images/open.png" />
+	    					</a>
+	    					<a (click)="isShow=false;isTextShow=true" *ngIf="isTextShow">
+	    						<img src="images/close.png" />
+	    					</a>
+	    				</td>
+	    			</tr>
+	    		</tbody>
+	    	</table>
+	   </div>
+	   <div class="btnoriganizaion">保存</div>
+</div>

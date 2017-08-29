@@ -1,0 +1,335 @@
+.versionManagementBigNigBox{
+	margin-left: 20px;
+	min-height:1000px;
+	margin-top: 20px;
+	background: white;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-right: 35px;
+	min-width: 1100px;
+}
+
+.versionManagementBox{
+	width: 100%;
+	height: 30px;
+	float: left;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.versionManagementReturnBox{
+	width: 300px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+.versionManagementReturnImg img{
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 7px;
+	cursor: pointer;
+}
+.versionManagementReturn{
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	cursor: pointer;
+}
+.versionManagementReturn span{
+	display: block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.versionManagementAddBox{
+	width: 70px;
+	height: 30px;
+	float: right;
+	line-height: 30px;
+}
+.versionManagementAddBox img{
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-top: 7px;
+	cursor: pointer;
+}
+.versionManagementAdd{
+	width: 24px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.versionManagementAdd span{
+	display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+/*表格样式02*/
+.trHeader{
+	background: #F9F9F9 100%;
+}
+table
+{
+    border-collapse:collapse;
+    width: 100%;background: #fff;
+    margin: 0;
+}
+    table th{
+        max-height: 58px;
+        background: #f9f9f9;
+        text-align: center;
+        line-height: 58px;
+    }
+table, td, th
+{
+    border:1px solid #dfdfdf;
+    padding:10px;
+}
+
+.table-drug tr.selected, .table-drug tr.checked,
+.table-drug tr.selected, .table-drug tr.focus{
+    background: #e3f2ff;
+}
+.table-drug tr:hover{
+    background: #e3f2ff;
+    cursor: pointer;
+}
+.input-page{
+    width:50px;
+}
+
+.table-body td{
+    font-weight: 500;
+}
+my-tbody,tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.hide-scroll{
+    margin-right: -17px; overflow-y: scroll;
+}
+.fixedContainer{
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0; padding-right: 17px;
+    overflow: hidden;
+    display:-webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display:-moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display:-ms-flexbox;      /* TWEENER - IE 10 */
+    display:-webkit-flex;     /* NEW - Chrome */
+    display:flex; 
+}
+
+#pageBreak{
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+#pageBreak .curpage{
+    border: 1px solid #ddd;
+    min-width: 40px;display: inline-block;border-radius: 4px;
+    line-height: 28px;text-align: center;
+}
+#pageBreak .blink-page-ipt{
+    width: 80px;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+#pageBreak .btn-default:focus{
+    background-color: #fff;
+    border-color: #ccc;
+    outline: none;
+}
+/**
+* my-tbody
+*/
+.table-bordered>my-tbody>tr>td, .table-bordered>my-tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+}
+.table>my-tbody>tr>td, .table>my-tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*浮动层1*/
+
+#show-dialog1{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	/*right: 0px;
+	bottom: 0px;*/
+	margin: auto;
+}
+.datatype-choosing1{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1050;
+    width: 350px;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+.chooseVersion{
+	width: 250px;
+	height: 30px;
+	font-size: 18px;
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+}
+.chooseVersionContent{
+	width: 250px;
+	min-height: 30px;
+	margin-top: 15px;
+}
+.versionContentBox{
+	width: 300px;
+	min-height: 30px;
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 10px;
+	height: 30px;
+}
+.versionContentBox span{
+	display: block;
+	float: left;
+	font-size: 13px;
+	color: #999;
+	line-height: 30px;
+}
+.versionContentBox select{
+	display: block;
+	width: 230px;
+	height: 28px;
+	background: white;
+	float:left;
+	margin-left: 5px;
+}
+.box{
+	width: 200px;
+	height: 30px;
+	background: red;
+	float: left;
+}
+.datatype-choosing1 .chooseVersionButtom{
+	width: 250px;
+	height: 50px;
+	margin-top: 35px;
+	margin-left: 50px;
+}
+.datatype-choosing2 .chooseVersionButtom{
+	width: 550px;
+	height: 50px;
+	margin-top: 15px;
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+.chooseSure{
+	width: 60px;
+	height: 35px;
+	background: #61BBE2 100%;
+	border:1px solid #666;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 5px;
+	float: left;
+	margin-right: 20px;
+}
+/*浮动层2 666666666666666666666666666666666*/
+
+.datatype-choosing2{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1050;
+    width: 350px;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+.datatype-choosing2 input{
+	display: block;
+	width: 230px;
+	height: 28px;
+	background: white;
+	float:left;
+	margin-left: 5px;
+}
+.datatype-choosing2 textarea{
+	display: block;
+	width: 230px !important;
+	height: 50px;
+	background: white;
+	float:left;
+	margin-left: 5px;
+	margin-bottom: 50px;
+}
+.datatype-choosing2 .chooseVersionButtom{
+	display: block;
+	padding-top: 40px;
+}
+/*浮动层3 666666666666666666666666666666666*/
+
+.datatype-choosing3{
+    position: fixed;
+    left: 35%;top: 40%;
+    z-index: 1050;
+    width: 350px;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+.datatype-choosing3 input{
+	display: block;
+	width: 230px;
+	height: 28px;
+	background: white;
+	float:left;
+	margin-left: 5px;
+}
+.datatype-choosing3 textarea{
+	display: block;
+	width: 230px !important;
+	height: 50px;
+	background: white;
+	float:left;
+	margin-left: 5px;
+	margin-bottom: 50px;
+}
+.datatype-choosing3 .chooseVersionButtom{
+	display: block;
+	padding-top: 40px;
+}

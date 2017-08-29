@@ -1,0 +1,221 @@
+.RulesCheckoutBigBox{
+	width: 1001px;
+	height: 860px;
+	background: white;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.RulesCheckoutHeaderBox{
+	width: 1001px;
+	height: 30px;
+}
+.versionManagementReturnBox{
+	width: 300px;
+	height: 30px;
+	float: left;
+}
+.versionManagementReturnImg img{
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+.versionManagementReturn{
+	width: 24px;
+	height: 12px;
+	float: left;
+	margin-left: 5px;
+}
+.versionManagementReturn span{
+	display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size:12px;
+    font-family: "STHeitiSC-Medium";
+    color:#515253 100%;
+}
+
+.versionManagementAddBox{
+	width: 100px;
+	height: 30px;
+	float: right;
+}
+.versionManagementAddBox img{
+	display: block;
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 8px;
+    cursor: pointer;
+}
+.versionManagementAdd{
+	width: 60px;
+	height: 30px;
+	float: left;
+	cursor: pointer;
+}
+.versionManagementAdd span{
+	display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size:12px;
+    font-family: "STHeitiSC-Medium";
+    color:#515253 100%;
+    cursor: pointer;
+}
+.information_for_patients_box{
+	width:960px;
+	height: 125px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-top: 30px;
+	float: left;
+}
+.information_for_patients_box span{
+	width: 56px;
+	height: 14px;
+	font-family: STHeitiSC-Medium;
+	color:#000000 100%;
+	font-size: 14px;
+	margin-left: 5px;
+}
+.timeRange{
+	margin-left: 20px;
+	width: 240px !important;
+	height: 30px;
+}
+.timeRange span{
+	display: block;
+	width: 93px !important;
+	height: 13px;
+	float: left;
+}
+.information_for_patients_content{
+	width: 960px;
+	height: 118px;
+	margin-top: 5px;
+	background: #F7F7F7 100%;
+}
+.information_for_patients_content_box{
+	width: 200px;
+	height: 30px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 12px;
+}
+.information_for_patients_content_box span{
+	display: block;
+	width: 65px;
+	height: 13px;
+	font-family:STHeitiSC-Medium;
+	color: #515253 100%;
+	font-size: 13px;
+	float: left;
+	line-height: 30px;
+}
+.information_for_patients_content_box select{
+	display: block;
+	width: 130px;
+	height: 28px;
+	float: left;
+}
+.information_for_patients_content_box .informationTitle{
+	display: block;
+	width: 130px;
+	height: 28px;
+	float: right;
+	line-height: 28px;
+}
+.information_for_patients_content_box .patientsTxt{
+	width: 50px;
+	height: 28px;
+	float: left;
+	border: 1px solid #DFDFDF;
+}
+.information_for_patients_content_box .patientsTxt1{
+	width: 50px;
+	height: 28px;
+	float: left;
+	border: 1px solid #DFDFDF;
+}
+.information_for_patients_content_box p{
+	width: 13px;
+	height: 13px;
+	float: left;
+	font-family: STHeitiSC-Medium;
+	color: #515253 100%;
+	font-size: 13px;
+	line-height: 30px;
+	margin: 0 5px;
+}
+.information_for_patients_content_box2{
+	margin-left: 100px !important;
+}
+/*就诊信息*/
+.seeDoctorInformationBigBox{
+	height: 190px !important;
+}
+.seeDoctorInformation{
+	height: 173px !important;
+}
+.gestationInfomation{
+	margin-left: 127px !important;
+}
+/*医生信息*/
+.doctorInformationBigBox{
+	height: 82px;
+}
+.doctorInformationBigBoxContent{
+	height: 62px !important;
+}
+/*//结尾*/
+.RulesCheckoutFooterBigBox{
+	width: 839px;
+	height: 50px;
+	margin-left: 100px;
+	margin-top: 150px;
+	float: left;
+}
+.RulesCheckoutCancel{
+	width: 100px;
+	height: 40px;
+	background: #FFFFFF 100%;
+	border: 1px solid #000;
+	margin-left: 200px;
+	float: left;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.RulesCheckoutCancel span{
+	display: block;
+	width: 80px;
+	height: 13px;
+	font-family: STHeitiSC-Light;
+	color: #515253 100%;
+	font-size: 13px;
+	line-height: 40px;
+	margin-left: 20px;
+}
+.RulesCheckoutNextStep{
+	width: 100PX;
+	height: 40PX;
+	background: #61BBE2 100%;
+	border: 1PX solid #61BBE2 100%;
+	border-radius: 6px;
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+}
+.RulesCheckoutNextStep span{
+	display: block;
+	width: 80px;
+	height: 14px;
+	font-family: STHeitiSC-Light;
+	color:#FFFFFF 100%;
+	font-size: 14px;
+	line-height: 40px;
+	margin-left: 20px;
+}

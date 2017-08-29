@@ -1,0 +1,38 @@
+<div class="applyClassifyContentBox">
+	<!--甲类-->
+	<div class="addInsuranceContent" *ngIf="finishApplyClassifyHide">
+		<img src="../../images/编辑甲_u6947.svg" />
+		<div class="addInsuranceContentBox">
+			<span>{{addInsuranceDetail.reimbursements.summary}} —— </span>
+			<span>{{addInsuranceDetail.reimbursements.rate}}, </span>
+			<span>{{addInsuranceDetail.reimbursements.description}}, </span>
+			
+		</div>
+	</div>
+
+	<!--报销分类点击添加可以增加的内容-->
+	<div class="addInsuranceContent nameContentBox addcontent" style="margin-top: 10px;" *ngIf="isTextShow">
+		<img src="../../images/u6914.png" />
+		<div class="nameBox">
+			<span>分类名称：</span>
+			<input type="text" placeholder="2~5个汉字" [(ngModel)]="addInsuranceDetail.reimbursements.summary" />
+		</div>
+		<div class="nameBox APPlyScaleBox">
+			<span>报销比例：</span>
+			<input type="text" placeholder="不包含小数点的百分比" [(ngModel)]="addInsuranceDetail.reimbursements.rate" />
+		</div>
+		<div class="nameBox classifyExplainBox">
+			<span>分类说明：</span>
+			<input type="text" placeholder="超过1000个汉字的文本内容" [(ngModel)]="addInsuranceDetail.reimbursements.description" />
+		</div>
+		<div class="completeButtom" (click)="finishApplyClassifyShow=false;finishApplyClassifyHide=true;isTextShow=false" (click)=finish()>
+			<span>完成</span>
+		</div>
+	</div>
+
+	<!--点击添加出现需要添加的内容end-->
+	<div class="addInsuranceContentTypeButtom" (click)="isShow=false;isTextShow=true">
+		<span>添加</span>
+	</div>
+
+</div>

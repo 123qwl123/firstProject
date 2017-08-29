@@ -1,0 +1,32 @@
+<div class="HealthInsurancePolicyFileAddBigBox">
+	<div class="HealthRulesVersionHeader">
+		<img src="image/u2388.svg" routerLink='/health_insurance_policy_file'/>
+		<span routerLink='/health_insurance_policy_file'>返回</span>
+	</div>
+	<div class="HealthInsurancePolicyFileFileItemBox BOX">
+		<span>文件标题:</span>
+		<input type="text" placeholder="长度1-30.不区分中英文.不支持特殊服务" [disabled]="isEdit" #auditPlanNameBox [(ngModel)]="insuranceAddDetail.summary"/>
+	</div>
+	<div class="HealthInsurancePolicyFileFileDescriptBox BOX descript form-group">
+		<span>文件描述:</span>
+		<div class="col-md-10 form-inline">
+	   		 <textarea row="3" [(ngModel)]="insuranceAddDetail.content"></textarea>
+	    </div>
+	</div>
+	<div class="HealthInsurancePolicyFileFileItemBox BOX source">
+		<span>来源:</span>
+		<input type="text" placeholder="长度1-30,不区分中英文,不支持特殊服务" [(ngModel)]="insuranceAddDetail.source"/>
+	</div>
+	<div class="HealthInsurancePolicyFileFileItemBox BOX">
+		<span>生效时间:</span>
+		<input type="date" [(ngModel)]="insuranceAddDetail.ativeDate"/>
+	</div>
+	<div class="HealthInsurancePolicyFileFileSaveBox">
+		<div class="cancelFile">
+			<span>取消</span>
+		</div>
+		<div class="save">
+			<span (click)=saveInsurance()>保存</span>
+		</div>
+	</div>
+</div>

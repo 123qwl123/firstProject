@@ -1,0 +1,118 @@
+<div class="single-margin relative flexbox max-height700">
+    <div class="gray-border bg-white left single-padding height500">
+        <form class="gray-underline">
+            <label class="title">险种:</label>
+            <select class="yibao">
+            	<option>杭州市城镇职工医保</option>
+            </select>
+        </form>
+    </div>
+    <div class="versionEffectBox">
+    	<div class="versionEffectBoxTiitle"><p><span>当前生效：</span> </p></div>
+    	<div class="versionEffectBoxTiitle"><p><span>规则版本V1.5</span></p></div>
+    	<div class="versionEffectBoxTiitle modification" (click)=modification()><p><span>修改</span></p></div>
+    </div>
+	    <!--//表格 start-->
+	            <div class="message-container-details fn-PL70  fn-PR70">
+						<table class="table table-bordered tableTitle">
+							<tbody>
+								    <tr class="trHeader">
+								    	<td width="20%"><b>药品目录版本</b></td>
+								    	<td width="20%"><b>说明</b></td>
+								    	<td width="20%"><b>对应规则版本</b></td>
+								    	<td width="20%"><b>最近修改日期</b></td>
+								    	<td width="20%"><b>操作</b></td>
+								    </tr>
+									<!--<tr *ngFor="let optRecipe of optRecipeList;let i = index;" class="trContent">
+												<td width="20%">{{optRecipe.summary}}</td>
+												<td width="20%">{{optRecipe.description}}</td>
+												<td width="20%">{{optRecipe.mrvName}}</td>
+												<td width="20%">{{optRecipe.gmtModified|date:"yyyy-MM-dd"}}</td>
+												<td width="20%" style="cursor: pointer;color: blue;" (click)=choose(optRecipeList[i].id,i) (click)="isChangeShow=false;isChangeHide=true">
+													修改
+												</td>
+									</tr>-->
+							</tbody>
+						</table>
+				</div>
+	     <!--//表格 end-->
+ </div>   
+ <!--弹窗浮动层  添加版本-->  
+ <my-dialog class="show-dialog">
+ 	 <template #dialogTemplate let-dialogModel>
+        <div class="datatype-choosing">
+        	<div class="dialogTitle">生效模式</div>
+        	<div class="selectVersion">
+        		<span>选择版本:</span>
+        		<select>
+        			<option>v1.0</option>
+        			<option>v2.0</option>
+        			<option>v3.0</option>
+        		</select>
+        	</div>
+        	<div class="dialogTime">
+        		<span>生效时间：</span>
+        		<input type="radio" value="true" class="immediateEffect" name="isReimbursement"
+        			  (change)="cateType.isReimbursement=$event.target.value;" [checked]="cateType.isReimbursement == '2'" value="2"/>
+        		<span>立即生效</span>
+        		<input type="radio" value="false" class="immediateEffect"
+        			    [checked]="cateType.isReimbursement == '1'"  value="1" name="isReimbursement"
+						(change)="cateType.isReimbursement=$event.target.value;"/>
+        		<span>定时生效</span>
+        	</div>
+        	<div class="versionTimeEffect" *ngIf="cateType.isReimbursement == 1">
+	        	<div class="changeTime">
+	        		<span>选择时间：</span>
+	        		<input type="date" class="versionTime" (click)="startDateforSearch.toggle();" (ngModelChange)="setEndInterval($event)" [maxDate]="maxStartDate" name="startDateforSearch" [(ngModel)]="startDate"  tabIndex="-1" ngbDatepicker #startDateforSearch="ngbDatepicker"/>
+	        	</div>
+	        	<div class="changeTime1">
+	        		<select class="changeTime1Select">
+	        			<option>00</option>
+	        			<option>01</option>
+	        			<option>02</option>
+	        			<option>03</option>
+	        			<option>04</option>
+	        			<option>05</option>
+	        			<option>06</option>
+	        			<option>07</option>
+	        			<option>08</option>
+	        			<option>09</option>
+	        			<option>10</option>
+	        			<option>11</option>
+	        			<option>12</option>
+	        			<option>13</option>
+	        			<option>14</option>
+	        			<option>15</option>
+	        			<option>16</option>
+	        			<option>17</option>
+	        			<option>18</option>
+	        			<option>19</option>
+	        			<option>20</option>
+	        			<option>21</option>
+	        			<option>22</option>
+	        			<option>23</option>
+	        		</select>
+	        		<span class="versionColon">:</span>
+	        		<select class="changeTime1Select1">
+	        			<option>00</option>
+	        			<option>05</option>
+	        			<option>10</option>
+	        			<option>15</option>
+	        			<option>20</option>
+	        			<option>25</option>
+	        			<option>30</option>
+	        			<option>35</option>
+	        			<option>40</option>
+	        			<option>45</option>
+	        			<option>50</option>
+	        			<option>55</option>
+	        		</select>
+	        	</div>
+	        </div>
+        	<div class="versionTrue">
+	            <a class="mt10" (click)="dialogModel.customModule = false;">取消</a>
+	            <a class="mt10 true">确定</a>
+            </div>
+        </div>
+    </template>
+ </my-dialog>

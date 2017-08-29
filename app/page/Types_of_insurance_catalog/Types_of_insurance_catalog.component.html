@@ -1,0 +1,48 @@
+<div class="flex column flexbox versionManagementBigNigBox">
+    <div class="form-inline search-panel fixed-header versionManagementBox">
+        <div class="versionManagementAddBox">
+             <div class="versionManagementAddImg">
+             	 <img src="images/u6735.png" />
+             </div>
+         	 <div class="versionManagementAdd" (click)=addInsurance()>
+         	   <span>添加险种</span>
+             </div>
+        </div>
+    </div> 
+    	 <div class="message-container-details">
+			<table class="table table-bordered tableTitle" style="border-collapse:collapse;">
+				<tbody id="tbody">
+					    <tr class="trInsuranceHeader">
+					    	<td width="13%" style="border-right: 0;">险种名称</td>
+					    	<td width="14%" style="border-right: 0;">当前应用规则版本</td>
+					    	<td width="16%" style="border-right: 0;">规则版本对应疾病版本</td>
+					    	<td width="16%" style="border-right: 0;">规则版本对应药品版本</td>
+					    	<td width="16%" style="border-right: 0;">规则版本对应项目版本</td>
+					    	<td width="16%" style="border-right: 0;">规则版本对应材料版本</td>
+					    	<td width="9%">操作</td>
+					    </tr>    
+						<tr *ngFor="let optRecipe of optRecipeList;let i = index;" class="trContent">
+							<td width="13%" style="border-top: 0;">{{optRecipe.insuranceName}}</td>
+							<!--<td width="9%">{{optRecipe.insuranceId}}</td>-->
+							<td width="14%" style="border-top: 0;border-right: 0;">{{optRecipe.rvName}}</td>
+							<td width="16%" style="border-top: 0;border-right: 0;">{{optRecipe.diseaseName}}</td>
+							<td width="16%" style="border-top: 0;border-right: 0;">{{optRecipe.drugName}}</td>
+							<td width="16%" style="border-top: 0;border-right: 0;">{{optRecipe.itemName}}</td>
+							<td width="16%" style="border-top: 0;border-right: 0;">{{optRecipe.materialName}}</td>	
+							<td width="9%"  (click)=modification() style="cursor: pointer;color: blue;border-top: 0;">
+								    <a routerLink='/page/Types_of_insurance_catalog/Types_of_insurance_catalog/Types_of_insurance_catalog/Types_of_insurance_catalog_lookInsurance/{{optRecipe.insuranceId}}'>
+								    	<img src="images/查看.svg" />
+								    </a>
+									<span>|</span>
+									<a (click)="goToEditPage(optRecipe.insuranceId)">
+										<img src="images/修改.svg"/>
+									</a>
+							</td>
+						</tr>
+						 <tr *ngIf="!optRecipeList || optRecipeList.length <= 0">
+                              <td width="100%" style="padding: 10px 0;">没有找到相关数据</td>
+                         </tr>
+				</tbody>
+			</table>
+	</div>
+</div>

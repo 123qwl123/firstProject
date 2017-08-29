@@ -1,0 +1,160 @@
+.versionManagementBigNigBox{
+	width: 1001PX;
+	margin-left: 20px;
+	height:1177px;
+	margin-top: 20px;
+	background: white;
+}
+
+.versionManagementBox{
+	width: 971px;
+	height: 30px;
+}
+.versionManagementReturnBox{
+	width: 300px;
+	height: 30px;
+	float: left;
+}
+.versionManagementReturnImg img{
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.versionManagementReturn{
+	width: 60px;
+	height: 22px;
+	float: left;
+	cursor: pointer;
+}
+.versionManagementReturn span{
+	display: block;
+    text-align: center;
+    line-height: 22px;
+}
+
+.versionManagementAddBox{
+	width: 70px;
+	height: 30px;
+	float: right;
+}
+.versionManagementAddBox img{
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-top: 16px;
+	cursor: pointer;
+}
+.versionManagementAdd{
+	width: 24px;
+	height: 12px;
+	float: left;
+	margin-top: 16px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.versionManagementAdd span{
+	display: block;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+}
+/*//表格*/
+.message-container-details{
+	display: block;
+	width: 971px;
+	margin-top: 10px;
+}
+.tableTitle{
+	display: block;
+	width: 971px !important;
+	margin-left: 20px;
+}
+.message-container-details .table > tbody > tr > td{
+	display: block;
+	float: left;
+	text-align: center;
+	height: 45px;
+}
+.border{
+	border-right:1px solid #ddd;
+}
+/*浮动层*/
+
+.show-dialog{
+	width: 300px;
+}
+.datatype-choosing{
+    position: fixed;
+    left: 35%;top: 40%;
+    z-index: 1050;
+    width: 300px;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+.chooseVersion{
+	width: 250px;
+	height: 30px;
+	font-size: 18px;
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+}
+.chooseVersionContent{
+	width: 250px;
+	height: 250px;
+	border: 1px solid #9D9D9D;
+	margin-top: 15px;
+}
+.versionContentBox{
+	width: 248px;
+	height: 220px;
+	margin-top: 10px;
+}
+.chooseVersionWord{
+	width: 220px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 60px;
+	font-size: 15px;
+	float: left;
+	cursor: default;
+}
+.chooseVersionWord span{
+	display: block;
+	width: 40px;
+	height: 20px;
+}
+.chooseVersionWord span:hover{
+	background: blue;
+}
+.chooseVersionButtom{
+	width: 250px;
+	height: 50px;
+	margin-top: 15px;
+}
+.chooseCancel{
+	width: 60px;
+	height: 35px;
+	background: white;
+	border:1px solid #666;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 60px;
+	margin-top: 5px;
+}
+.chooseSure{
+	width: 60px;
+	height: 35px;
+	background: #61BBE2 100%;
+	border:1px solid #666;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 30px;
+	margin-top: 5px;
+}

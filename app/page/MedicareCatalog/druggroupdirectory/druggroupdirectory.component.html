@@ -1,0 +1,82 @@
+
+<div class="catalogObject fn-clear" style="height: calc(100vh - 95px);">
+    <div class="catalogObject-content" style="min-width:1100px;width:calc(100vw - 190px);height: calc(100vh - 95px);">
+
+		<div class="container-left fn-left" style="height:calc(100vh - 95px)">
+			<div class="catalog-tree" style="border:none;margin-bottom:15px;">
+				<div class="search-panel form-inline">
+			            <div class="form-group ">
+			                <label class="control-label catalog-name fn-W85">药物组名称：</label>
+			                <div class="input-group fn-MR10 fn-W212">
+			                    <div class="input-group-addon"></div>
+			                    <input class="form-control ng-valid " type="text" placeholder="请输入关键字" [(ngModel)]="searchWord"/>
+			                </div>
+			            	<button type="submit" class="btn btn-primary" (click)="search()">搜索</button>
+			            </div>
+				</div>
+			</div>
+			<div class="catalog-tree" style="height:calc(100vh - 166px);">
+				<div id="data-catalog-list"  class="catalog-list" style="height:calc(100vh - 178px);padding-top:25px;position:relative;">
+						<div class="add-button" (click)="add()"><span class="add-image"></span>添加</div>
+			            <Tree [nodes]="medicineGroup"  class="my-tree" [options]="options" (onActivate)="chooseNode($event)">
+			                <template #treeNodeTemplate let-node>
+			                    <div >
+			                        <span class="nodes-icon"></span>
+			                        <span>{{node.data.name}}</span>
+			                        <span class="fn-ML5" *ngIf="node.data == curNode && node.data.type != 2" (click)="delData(node)"><img src="../../../../images/commonicons/delete-icon.svg" style="vertical-align: -2px;"></span>
+			                    </div>
+			                </template>
+			            </Tree>
+		        </div>
+			</div>
+		</div>
+		<div class="fn-left fn-W20 container-center" style="height: calc(100vh - 95px);"></div>
+		<div class="container-right fn-left" style="height: calc(100vh - 95px);min-width:600px;">
+				<div *ngIf="curNode && curNode.type !=2 || isAdd"  class="add-catalog-form fn-W580 fn-PT15" >
+								<div class="form-group" >
+									<label class=" col-md-2 control-label">
+											<em _ngcontent-kdt-4="">*</em>标题:
+									</label>
+									<div class="form-inline">
+										<input type="text" (input)="testName()"  class="form-control input-sm fn-W478"  [(ngModel)]="activeIdNodeData.summary"  maxlength="30" placeholder="支持数字与字母、汉子、'.'、'-'且长度不超过30个汉字"  />
+									</div>
+								</div>
+								
+								<div class="form-group form-textarea" >
+									<label class=" col-md-2 control-label control-textarea-label">
+											描述:
+									</label>
+									<div class="form-inline">
+											<textarea  class="form-control fn-W478" maxlength="500" style="height:100px;max-height:100px;max-width: 478px;" [(ngModel)]="activeIdNodeData.description" >{{activeIdNodeData.description}}</textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class=" col-md-2 control-label">
+											添加药品:
+									</label>
+									<div class="form-inline">
+										<div style="height:30px;line-height:28px;">{{activeIdNodeData.drugsName}}</div>
+											<div class="modify-button" class="fn-ML102" style="margin-top:7px;">
+											 	<span class="fn-MR10">
+													<button class="btn btn-primary fn-W80" style="background:#fff;color:#41A4CB;" (click)="modifycancelfn()">修改药品</button>
+				        						</span>
+											</div>
+									</div>
+								</div>
+								
+								<div class="form-group" style="margin-top:68px;">
+									<label class=" col-md-2 control-label">
+											
+									</label>
+									<div class="form-inline">
+										<button class="btn btn-primary fn-W80"  type="submit"  (click)="save()">保存</button>
+									</div>
+								</div>		
+				</div>
+		</div>
+
+    </div>
+<div>
+<my-dialog class="show-dialog">
+	
+</my-dialog>

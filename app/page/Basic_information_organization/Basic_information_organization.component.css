@@ -1,0 +1,283 @@
+/*左边表格*/
+.origanizationBigBoxLeft{
+	width: 400px;
+	height: 750px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+	background: white;
+	padding-left: 10px;
+}
+/*头部一行*/
+.origanizationBigHeader{
+	font-family: STHeitiSC-Light;
+	font-size: 18px;
+	color: #000000;
+	line-height: 15px;
+	float: left;
+	margin-left: 54px;
+	margin-top: 24px;
+}
+/*机构名称,第二行*/
+.origanizationBigBoxLeftHeader{
+	margin-top: 80px;
+	float: left;
+	margin-bottom: 50px;
+}
+.name{
+	width: 70px;
+	height: 13px;
+	float: left;
+	font-family: STHeitiSC-Light;
+    font-size: 13px; 
+    color: #515253;
+    margin-top: 5px;
+}
+.input-group-addon{
+	width: 15px;
+	height: 15px;
+	background: red;
+	float: left;
+}
+.form-control{
+	width: 205px;
+	height: 28px;
+	float: left;
+	display: block;
+}
+.btn{
+	display: block;
+	float: left;
+}
+.txt{
+	width: 245px;
+	height: 28px;
+	font-family: STHeitiSC-Light;
+	font-size: 13px;
+	color: #909FA7;
+	float: left;
+	display: block;
+	background: #FFFFFF;
+	border: 1px solid #DFDFDF;
+	line-height: 28px;
+}
+.txt img{
+	width: 13px;
+	height: 13px;
+	float: left;
+	display: block;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.txt .text{
+	width:220px;
+	height: 26px;
+	float: left;
+	display: block;
+	line-height: 26px;
+	border: none;
+}
+.searchName{
+	width: 40px;
+	height: 28px;
+	background: #4EB7E0;
+    border-radius: 4px; 
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+/*左边表格*/
+.tableBox{
+	width: 378px;
+	height: 450px;	
+	float: left;
+	margin-top: 20px;
+	overflow-y: auto;
+}
+.trHeader{
+	width: 378px;
+	height: 45px;
+	background: #F9F9F9;
+    border: 1px solid #DFDFDF;
+    float: left;
+    position: fixed;
+    left: 190px;
+    top: 257px;
+}
+.organizationNametd{
+	margin-left: 16px;
+	line-height: 45px;
+	display: block;
+	float: left;
+}
+.healthCare{
+	margin-left: 230px;
+	line-height: 45px;
+	display: block;
+	float: left;
+}
+.trHeadertable{
+	width: 378px;
+	height: 40px;
+	float: left;
+	background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+}
+.organizationNametd02{
+	margin-left: 16px;
+	line-height: 45px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+.healthCare02{
+	line-height: 45px;
+	float: right;
+	cursor: pointer;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+}
+.trHeadertable img{
+	display: block;
+	float: left;
+	line-height: 40px;
+	margin-top: 10px;
+}
+/*//右边表格*/
+.origanizationBigBoxRight{
+	width: 580px;
+	height: 760px;
+	float: left;
+	background: white;
+}
+.tex02{
+	border: none;
+	width: 430px !important;
+}
+.tex02 .controlSelect{
+	width: 81px;
+	height: 28px;
+	display: block;
+	float: left;
+	background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+}
+.source{
+	display: block;
+	font-family: STHeitiSC-Medium;
+	font-size: 13px;
+	color: #515253;
+	float: left;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+.departmentsName{
+	width: 100px;
+	height: 28px;
+	display: block;
+	background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    float: left;
+}
+.tableBox02{
+	width: 580px;
+	height: 500px;
+	margin-top: 20px;
+	float: left;
+	overflow-y: auto;
+	overflow: auto;
+	
+}
+.officeTable{
+	width: 580px;
+	height: 500px;
+	background: red;
+	float: left;
+	overflow-y: auto;
+}
+
+.trHeader02{
+	width: 580px;
+	height: 45px;
+	background: #F9F9F9;
+    border: 1px solid #DFDFDF;
+    float: left;
+    position: fixed;
+    left: 600px;
+    top:257px;
+    
+}
+.trHeadertable02{
+	width: 580px;
+	height: 40px;
+	float: left;
+	background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+}
+.organizationNametd03{
+	width: 190px;
+	height: 45px;
+	line-height: 45px;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.deparment{
+	width: 190px;
+	height: 45px;
+	line-height: 45px;
+	display: block;
+	float: left;
+	text-align: center;
+	/*border-bottom: 1px solid #666;
+	border-top:  1px solid #666;*/
+}
+.healthCare03{
+	width: 185px;
+	height: 45px;
+	line-height: 45px;
+	display: block;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	cursor: pointer;
+	/*border: 1px solid #666;*/
+}
+
+.doctoryType{
+	width: 190px;
+	height: 45px;
+	line-height: 45px;
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+
+/*搜索框*/
+
+/*表格*/
+.tableContent{
+	width: 378px;
+	height: 450px;
+	overflow-y:auto;
+}
+
+/*保存*/
+.btnoriganizaion{
+	width: 70px;
+	height: 30px;
+	background: #61BBE2;
+	border: 1px solid #61BBE2;
+	border-radius: 4px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}

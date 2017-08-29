@@ -1,0 +1,96 @@
+<div class="flex column flexbox versionManagementBigNigBox">
+    <div class="form-inline search-panel fixed-header versionManagementBox">
+        <div class="form-inline content-search versionManagementReturnBox">
+             <div class="versionManagementReturnImg">
+             	 <img src="image/u2388.svg" />
+             </div>
+             <div class="versionManagementReturn" (click)=returnHealthManagement()>
+             	<span>返回</span>
+             </div>
+        </div>
+        <div class="form-inline content-search versionManagementAddBox">
+             <div class="versionManagementAddImg">
+             	 <img src="image/u6735.png"/>
+             </div>
+             <div class="versionManagementAdd" (click)=choose()>
+             	<span>添加</span>
+             </div>
+        </div>
+    </div> 
+    <div class="message-container-details fn-PL70  fn-PR70">
+			<table class="table table-bordered tableTitle">
+				<tbody>
+						<tr *ngFor="let item of versionManagementService.invalidInformationcs; let i = index;" >
+									<td *ngIf="item.name1" width="110px" style="background:#F9F9F9 100%;">{{item.name1}}</td>
+									<td *ngIf="item.name" width="110px">{{item.name}}</td>
+									<td *ngIf="item.field1" width="110px" style="background: #F9F9F9 100%;">{{item.field1}}</td>
+									<td *ngIf="item.field" width="110px">{{item.field}}</td>
+									<td *ngIf="item.advicecInformationc1" width="150px" style="background: #F9F9F9 100%;">{{item.advicecInformationc1}}</td>
+									<td *ngIf="item.advicecInformationc" width="150px">{{item.advicecInformationc}}</td>
+									<td *ngIf="item.advicecInformationc1" width="150px" style="background: #F9F9F9 100%;">{{item.drugCatalogVersion1}}</td>	
+									<td *ngIf="item.advicecInformationc" width="150px">{{item.drugCatalogVersion}}</td>
+									<td *ngIf="item.advicecInformationc1" width="180px" style="background: #F9F9F9 100%;">{{item.ruleVersionProjectVersion1}}</td>
+									<td *ngIf="item.advicecInformationc" width="180px">{{item.ruleVersionProjectVersion}}</td>
+									<td *ngIf="item.advicecInformationc1" width="180px" style="background: #F9F9F9 100%;">{{item.ruleVersionMaterialVersion1}}</td>	
+									<td *ngIf="item.advicecInformationc" width="180px">{{item.ruleVersionMaterialVersion}}</td>	
+									<td *ngIf="item.advicecInformationc1" width="89px" style="cursor: pointer;background: #F9F9F9 100%;">{{item.operation1}}</td>
+									<td *ngIf="item.advicecInformationc" width="89px" (click)=modification() style="cursor: pointer;color: blue;">{{item.operation}}</td>
+						</tr>
+				</tbody>
+			</table>
+	</div>
+</div>
+
+<!--弹窗浮动层  添加版本-->  
+ <my-dialog class="show-dialog">
+ 	 <template #dialogTemplate let-dialogModel>
+        <div class="datatype-choosing">
+              <div class="chooseVersion">选择目录版本</div>
+              <div class="chooseVersionContent">
+              	<div class="versionContentBox">
+              		<div class="chooseVersionWord">
+              			<span>v1.0</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.1</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.2</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.3</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.4</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.5</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.6</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.7</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v2.0</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v2.1</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v2.2</span>
+              		</div>
+              	</div>
+              </div>
+              <div class="chooseVersionButtom">
+              	 <button class="chooseCancel" (click)="dialogModel.customModule = false;">取消</button>
+              	 <button class="chooseSure">确认</button>
+              </div>
+        </div>
+    </template>
+ </my-dialog>
+
+
+
+

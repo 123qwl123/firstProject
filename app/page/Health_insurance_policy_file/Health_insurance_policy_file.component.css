@@ -1,0 +1,77 @@
+.HealthInsurancePolicyFileBigBox{
+	width: 100%;
+	height: 900px;
+	background: #fff;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+/*头部*/
+.HealthInsurancePolicyFileHeaderBox{
+	width: 100%;
+	height: 50px;
+}
+.versionManagementAddBox{
+	width: 70px;
+	height: 30px;
+	float: right;
+}
+.versionManagementAddBox img{
+	display: block;
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-top: 16px;
+	cursor: pointer;
+}
+.versionManagementAdd{
+	width: 30px;
+	height: 14px;
+	float: left;
+	margin-top: 16px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.versionManagementAdd span{
+	display: block;
+    text-align: center;
+    line-height: 14px;
+    font-size: 14px;
+}
+/*//表格*/
+table
+{
+    border-collapse:collapse;
+    width: 100%;background: #fff;
+    margin: 0;
+}
+    table th{
+        max-height: 58px;
+        background: #f9f9f9;
+    }
+table, td, th
+{
+    border:1px solid #dfdfdf;
+    padding:10px;
+}
+.HealthInsurancePolicyFileTableBox{
+	width: 100%;
+}
+.HealthInsurancePolicyFileTableBox td{
+	height: 30px;
+	text-align: center;
+}
+.HealthInsurancePolicyFileTableBox{
+	text-align: center;
+}
+.HealthInsurancePolicyFileTableBox a{
+	text-decoration: none;
+	color: blue;
+	display: block;
+	float: left;
+}
+.HealthInsurancePolicyFileTableBox span{
+	display: block;
+	width: 10px;
+	height: 10px;
+	float: left;
+}

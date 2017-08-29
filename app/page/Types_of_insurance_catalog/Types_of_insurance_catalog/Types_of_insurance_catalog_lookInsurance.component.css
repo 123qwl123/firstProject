@@ -1,0 +1,152 @@
+.TypeOfInsuranceCatalogLookInsuranceBigBox{
+	width: 100%;
+	min-height: 1000px;
+	background: white;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-family: STHeitiSC-Medium;
+	color: #515253 100%;
+	font-size: 13px;
+	cursor: pointer;
+}
+/*头部*/
+
+/*返回*/
+.ReturnBox{
+	height: 30px;
+	padding-top: 10px;
+}
+.ReturnBox img{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-left: 20px;
+	float: left;
+}
+.ReturnBox span{
+	display: block;
+	font-family: STHeitiSC-Medium;
+	color: #515253 100%;
+	font-size: 12px;
+	width: 24px;
+	height: 12px;
+	margin-left: 10px;
+	float: left;
+}
+/*险种名称*/
+.insuranceNameBox{
+	width: 100%;
+	margin-top: 27px;
+	margin-left: 63px;
+	float: left;
+}
+.insuranceNameBox span{
+	display: block;
+	float: left;
+}
+/*险种简介*/
+.insuranceExplainBox{
+	height: 78px;
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 63px;
+	float: left;
+}
+.insuranceExplainBox span{
+	display: block;
+	float: left;
+}
+/*报销分类*/
+.applyClassifyBox{
+	min-height: 160px;
+	float: left;
+	width: 100%;
+	margin-left: 63px;
+}
+.applyClassifyBox span{
+	display: block;
+	float: left;
+	line-height: 26px;
+}
+.applyClassifyBox p{
+	display: block;
+	width: 100%;
+	line-height: 26px;
+	float: left;
+	margin-left: 66px;
+}
+.addInsuranceContentBox{
+	width: 600px;
+	height: 30px;
+	float: left;
+	display: block;
+}
+.addInsuranceContentBox div{
+	display: block;
+	float: left;
+	line-height: 30px;
+	font-size: 15px;
+	color: #666666;
+	margin-right: 5px;
+}
+/*险种名称下的内容*/
+.applyClassifyContentBox{
+	min-height: 114px;
+	margin-left: 66px;
+	float: left;
+}
+.applyClassifyContentBox span{
+	width: 100%;
+	display: block;
+	float: left;
+	line-height: 26px;
+}
+/*投保人员类别*/
+.personnerClassesBox{
+	margin-left: 36px;
+	float: left;
+	width: 100%;
+}
+.personnerClassesBox p{
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.personnerClassesBox span{
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+/*复方的味数*/
+.compoundCountBox{
+	margin-left: 40px;
+	float: left;
+	width: 100%;
+	line-height: 26px;
+	margin-top: 10px;
+}
+.compoundCountBox span{
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+/*修改*/
+.modificationBox{
+	width: 70px;
+	height: 30px;
+	background: #61BBE2 100%;
+	border: 1px solid #61BBE2 100%;
+	float: left;
+	margin-left: 131px;
+	margin-top: 40px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.modificationBox span{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	font-size: 14px;
+}

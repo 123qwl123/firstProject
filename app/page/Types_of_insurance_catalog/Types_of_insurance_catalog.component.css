@@ -1,0 +1,271 @@
+.versionManagementBigNigBox{
+	padding-left: 10px;
+	padding-right: 10px;
+	background: white;
+	min-height: 800px;
+	min-height: 839px;
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.versionManagementBox{
+	height: 30px;
+}
+.versionManagementBox02{
+	width: 50%;
+	height: 30PX;
+	float: left;
+}
+.versionManagementAddBox{
+	width:100px;
+	height: 30px;
+	float: right;
+	cursor: pointer;
+	line-height: 30px;
+}
+.versionManagementAddBox img{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-top: 6px;
+	float: left;
+}
+.versionManagementAdd span{
+	display: block;
+    font-size: 15px;
+    float: left;
+    margin-left: 5px;
+}
+/*表格样式02*/
+.trHeader{
+	background: #F9F9F9 100%;
+}
+table
+{
+    border-collapse:collapse;
+    width: 100%;background: #fff;
+    margin: 0;
+    border: none;
+}
+    table th{
+        min-height: 58px;
+        background: #f9f9f9;
+        text-align: center;
+        line-height: 58px;
+        font-size: 13px;
+    }
+table, td, th
+{
+    padding:10px;   
+}
+
+.table-drug tr.selected, .table-drug tr.checked,
+.table-drug tr.selected, .table-drug tr.focus{
+    background: #e3f2ff;
+}
+.table-drug tr:hover{
+    background: #e3f2ff;
+    cursor: pointer;
+}
+.input-page{
+    width:50px;
+}
+
+.table-body td{
+    font-weight: 500;
+}
+my-tbody,tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.hide-scroll{
+    margin-right: -17px; overflow-y: scroll;
+}
+.fixedContainer{
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0; padding-right: 17px;
+    overflow: hidden;
+    display:-webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display:-moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display:-ms-flexbox;      /* TWEENER - IE 10 */
+    display:-webkit-flex;     /* NEW - Chrome */
+    display:flex; 
+}
+
+#pageBreak{
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+#pageBreak .curpage{
+    border: 1px solid #ddd;
+    min-width: 40px;display: inline-block;border-radius: 4px;
+    line-height: 28px;text-align: center;
+}
+#pageBreak .blink-page-ipt{
+    width: 80px;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+#pageBreak .btn-default:focus{
+    background-color: #fff;
+    border-color: #ccc;
+    outline: none;
+}
+
+.table>my-tbody>tr>td, .table>my-tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+}
+table>tr:nth-child(odd){background: red;};
+table>tr:nth-child(even){background:green;};
+.table>tbody>tr:nth-child(odd){background:#ccc;};
+.table>tbody>tr:nth-child(even){background:green;};
+
+table>tr:nth-child(odd){background: red;};
+table>tr:nth-child(even){background:green;};
+/*//表格*/
+.message-container-details{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.tableTitle tbody{
+	width: 100% !important;
+}
+.tableTitle tr{
+	width: 100% !important;
+	padding-left: -50px;
+}
+.message-container-details .table > tbody > tr > td{
+	padding: 11px 8px;
+	display: block;
+	float: left;
+	text-align: center;
+	min-height: 45px;
+}
+
+/*浮动层*/
+
+.show-dialog{
+	width: 300px;
+}
+.datatype-choosing{
+    position: fixed;
+    left: 35%;
+    top: 40%;
+    z-index: 1050;
+    width: 300px;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+.chooseVersion{
+	width: 250px;
+	height: 30px;
+	font-size: 18px;
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+}
+.chooseVersionContent{
+	width: 250px;
+	height: 250px;
+	border: 1px solid #9D9D9D;
+	margin-top: 15px;
+}
+.versionContentBox{
+	width: 248px;
+	height: 220px;
+	margin-top: 10px;
+}
+.chooseVersionWord{
+	width: 220px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 60px;
+	font-size: 15px;
+	float: left;
+	cursor: default;
+}
+.chooseVersionWord span{
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+}
+.chooseVersionWord span:hover{
+	background: blue;
+}
+.chooseVersionButtom{
+	width: 250px;
+	height: 50px;
+	margin-top: 15px;
+}
+.chooseCancel{
+	width: 60px;
+	height: 35px;
+	background: white;
+	border:1px solid #666;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 60px;
+	margin-top: 5px;
+}
+.chooseSure{
+	width: 60px;
+	height: 35px;
+	background: #61BBE2 100%;
+	border:1px solid #666;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+/*表格*/
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: blue;
+}
+tbody{
+	display: block;
+	width: 971px !important;
+}
+tbody span{
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 4px;
+	color: #283237;
+	
+}
+tr{
+	display: block;
+	width: 971px !important;
+	float: left;
+}
+.table .trInsuranceHeader{
+	height: 45px;
+	
+}
+.trInsuranceHeader td{
+	/*background: #F9F9F9 100%;*/
+	font-family: STHeitiSC-Medium;
+	color: #515253 100%;
+	font-size: 13px;
+}
+.trContent{
+	min-height: 45px;
+}

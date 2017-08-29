@@ -1,0 +1,33 @@
+/* 疾病目录样式 */
+
+.defaultDetails{
+	font-size:18px;
+	font-weight: bold;
+	text-align: center;
+	height:25px;
+
+}
+.Detalis-title{
+	width:100%;
+	height:30px;
+	background-color: #ddd;
+	line-height: 30px;
+}
+.fn-left-image{
+	width:5px;
+	height:100%;
+	background-color: #2A96C1;
+	margin-right:10px;
+}
+.fn-right-image{
+	width: 40px;
+	height:30px;
+	cursor:pointer;
+	background:url('../app/page/MedicareCatalog/disease/image/uTop.svg') no-repeat center center;
+}
+.fn-right-colse-image{
+	width: 40px;
+	height:30px;
+	cursor:pointer;
+	background:url('../app/page/MedicareCatalog/disease/image/uBottom.svg') no-repeat center center;
+}

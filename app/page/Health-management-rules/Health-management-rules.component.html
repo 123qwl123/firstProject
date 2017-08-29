@@ -1,0 +1,140 @@
+<div class="flex column flexbox">
+    <div class="form-inline search-panel fixed-header managementRulesHeaderBox">
+        <div class="form-inline content-search gray-underline">
+            <div class="form-group">
+                <label class="control-label">选择险种：</label>
+                <select class="changeRules">
+                	<option>杭州市城镇医疗保险(当前共12，,456条规则)</option>
+                </select>	
+            </div>
+            <div class="form-group">
+                <label class="control-label">选择规则版本：</label>
+                <select class="changeRules">
+                	<option>v1.5</option>
+                </select>	
+            </div>
+            <div class="form-group">
+               <div class="versionManagementBigBox">
+		        	<div class="versionManagementImg" (click)=versionManagementTitle()>
+		        		 <img src="image/u7745.svg" /> 
+		        	</div>
+		        	<div class="versionManagementTitle">
+		        		<span (click)=versionManagementTitle()>版本管理</span>
+		        	</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="RulesCheckBigBox">
+		        	<div class="RulesCheckImg" (click)=RulesCheckTitle() >
+		        		 <img src="image/u15118.svg" />
+		        	</div>
+		        	<div class="RulesCheckTitle" (click)=RulesCheckTitle() >
+		        		<span>规则校验</span>
+		        	</div>
+	        	</div>	
+            </div>
+        </div>
+    </div> 
+    <div class="HealthRulesRadiusBigBox">
+    	<div class="form-group radius1">
+    		<div class="HealthRulesRadiusHeaderBox">
+    		  <img src="image/u14874.png" />
+    	      <div class="radiusTitle">疾病</div>
+    	     </div>
+    	     <div class="HealthCount">00000</div>
+    	     <div class="HealthRules">个规则</div>
+    	</div>
+    	<div class="form-group radius radius2">
+    		<div class="HealthRulesRadiusHeaderBox">
+    		  <img src="image/u14874.png" />
+    	      <div class="radiusTitle">药品</div>
+    	    </div>
+    	     <div class="HealthCount">00000</div>
+    	     <div class="HealthRules">个规则</div>
+    	</div>
+    	<div class="form-group radius radius3">
+    		<div class="HealthRulesRadiusHeaderBox">
+    		  <img src="image/u14874.png" />
+    	      <div class="radiusTitle">项目</div>
+    	    </div>
+    	     <div class="HealthCount">00000</div>
+    	     <div class="HealthRules">个规则</div>
+    	</div>
+    	<div class="form-group radius radius4">
+    		<div class="HealthRulesRadiusHeaderBox">
+    		  <img src="image/u14874.png" />
+    	      <div class="radiusTitle">材料</div>
+    	    </div>
+    	     <div class="HealthCount">00000</div>
+    	     <div class="HealthRules">个规则</div>
+    	</div>
+    	<div class="form-group radius radius5">
+    		<div class="HealthRulesRadiusHeaderBox">
+    		  <img src="image/u14874.png" />
+    	      <div class="radiusTitle">就诊</div>
+    	    </div>
+    	     <div class="HealthCount">00000</div>
+    	     <div class="HealthRules">个规则</div>
+    	</div>
+    </div>
+    <div class="HealthBigBox">
+    	<div class="HealthBigLeftBox">
+    		<div class="managementRules managmentBox" [class.active]="handleType == 0" (click)="handleType=0;">
+    			<span>规则</span>
+    		</div>
+    		<div class="managementCatalog managmentBox" [class.active]="handleType == 1" (click)="handleType=1;">
+    			<span>目录</span>
+    		</div>
+    		<div class="managementRulesAddRules">
+    			<img src="image/u6735.png" (click)="isShow=false;isTextShow=true"/> 
+    			<span (click)="isShow=false;isTextShow=true">添加规则</span>
+    		</div>
+    		<div class="line"></div>
+    		<!--规则和目录里面的内容-->
+    		<div class="RulesCatalogContentBox">
+    			<!--规则-->
+    			<Health_management_rules_content [class.flex]="handleType == 0" [hidden]="handleType != 0"></Health_management_rules_content>
+    		    <!--目录-->
+    		    <Health_management_catalog_content [class.flex]="handleType == 1" [hidden]="handleType != 1"></Health_management_catalog_content>
+    		</div>
+    	</div>
+    	<div class="HealthManagementLine"></div>
+    	<div class="HealthBigRightBox">
+    		<!--右边边框里面的内容 start-->
+    		<div *ngIf="isShow">
+	    		<div class="HealthBigRightHeaderBox">
+	    			<div class="HealthBigRightChangeTime">
+	    				<span>最后修改日期:</span>
+	    				<div class="startTime">2017-3-23</div>
+	    				<div class="endTime the_same">13:57:42</div>
+	    			</div>
+	    			<div class="HealthBigRightChangePerson">
+	    				<span>最后修改人:</span>
+	    				<div class="startTime the_same">冷公子</div>
+	    			</div>
+	    			<div class="HealthBigRightChangePerson">
+	    				<span>审核人:</span>
+	    				<div class="startTime the_same">冷公子</div>
+	    			</div>
+	    			<div class="HealthBigRightChangeTime timeCicle">
+	    				<span>时间周期:</span>
+	    				<div class="startTime">一个自然日内</div>
+	    			</div>
+	    			<div class="HealthBigRightChangePerson alerdyChoice">
+	    				<span>已选择药物:</span>
+	    				<div class="startTime the_same">阿莫西林；阿西匹林</div>
+	    			</div>
+	    		</div>
+	    		<div class="HealthBigRightBottomBox">
+	    			<p>规则维护流程</p>
+	    			<span>含对应疾病；药品；项目；材料目录版本</span>
+	    		</div>
+	    	</div>
+    		<!--右边边框里面的内容end-->
+    		
+    		<!--test-->
+    		<Health_management_add_rules *ngIf="isTextShow"></Health_management_add_rules>
+    		<!--test-->
+    	</div>
+    </div>
+</div>

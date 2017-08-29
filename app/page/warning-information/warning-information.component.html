@@ -1,0 +1,83 @@
+<div class="single-margin relative flexbox max-height700">
+	<!--头部-->
+    <div class="waringHeader">
+            <div class="title">险种:</div>
+            <div class="waringList">
+			   <select-comp [option]="insuranceTypeOption" (select)="chooseInsurance($event)"></select-comp>
+			</div>
+    </div>
+    <div class="groupDataListBigBox">
+    <!--医生端设置-->
+	    <div class="doctorBigBox">
+			    <div class="doctorBox">
+			    	<div class="doctorContent">※ 医生端设置</div>
+			    </div>
+			    <div class="doctorContentBox">
+			    	<!--添加组合的内容start-->
+			    	<!--<warming_information_addggroup></warming_information_addggroup>-->
+			    	<div class="single-margin relative flexbox max-height700">
+				    	<div class="warimgDoctorSelectBox">
+				    		<div class="cancelGroupImg">
+				    			<img src="image/u6914.png" (click)="isShow=false;"/>
+				    		</div>
+				    		<div class="warimgDoctorSelect02">
+				    			<!--就诊来源-->
+				    			<div class="title">就诊来源：</div>  
+				    			<input type="text" class="selectList" (click)=checkboxData() />
+				    			<div class="selectListContent" *ngIf="selectHide">
+				    				<div class="selectListData selectListData01">
+				    					<p (click)=deletDataList()>X</p>
+				    				</div>
+				    				<label  class="selectListData" *ngFor ="let item of resource;let i=index;">
+				    					<input type="checkbox" class="checkbox" (change)='saveCheckSource(resource,i,$event.target)'/>
+				    				    <div class="Listdata">{{item.name}}</div>
+				    				</label>
+				    				<!--<div class="selectListData">
+				    					<input type="checkbox" class="checkbox"/>
+				    				    <div class="Listdata">门诊</div>
+				    				</div>
+				    				<div class="selectListData">
+				    					<input type="checkbox" class="checkbox"/>
+				    				    <div class="Listdata">门诊</div>
+				    				</div>
+				    				<div class="selectListData">
+				    					<input type="checkbox" class="checkbox"/>
+				    				    <div class="Listdata">门诊</div>
+				    				</div>-->
+				    			</div>
+				    		</div>
+					    	<!--规则类型-->
+					    	
+				    	</div><br />
+           		 </div>
+
+			    	<!--添加组合的内容end-->
+			    	<!--<warming_information_addggroup></warming_information_addggroup>-->
+			    	
+			    	<div class="addGroud"><p class="addGroundTitle" (click)="addGroups()">添加组合</p></div>
+	            </div>
+	    </div>
+	     <!--护士端设置-->
+	     <div class="doctorBigBox">
+			    <div class="doctorBox">
+			    	<div class="doctorContent">※ 护士端设置</div>
+			    </div>
+			    <div class="doctorContentBox">
+			    	<warming_information_addggroup></warming_information_addggroup>
+			    	<!--添加组合的内容start-->
+			    	<warming_information_addggroup *ngIf="isTextShow"></warming_information_addggroup>
+			    	<!--添加组合的内容 end-->
+			    	<div class="addGroud"><p class="addGroundTitle" (click)="isTextShow=true;">添加组合</p></div>
+			    </div>  
+	    </div>
+    </div>
+    <!--保存-->
+    <div class="warimgXinxi">
+		    <p>
+		    	<span class="warimgSave" (click)="WarimgSave()">
+		    		保存
+		    	</span>
+		    </p>
+    </div>
+</div>
+ 

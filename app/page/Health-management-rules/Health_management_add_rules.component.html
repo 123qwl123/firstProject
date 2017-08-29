@@ -1,0 +1,34 @@
+
+<div class="HealthManagementAddRulesBigBox">
+	<div class="HealthManagementAddRulesHeaderBox">
+		<p>编辑规则</p>
+		<span>第一步：</span>
+		<div>选择时间</div>
+    </div>
+    <div class="line"></div>
+    <div class="HealthManagementAddRulesBottomBox">
+    	<div class="HealthManagementAddRulesMiddleBox" *ngIf="isTextShow">
+		    <div class="timeCicle">
+		    	<span>时间周期：</span>
+		    	<select>
+		    		<option>本次就诊</option>
+		    		<option>时间跨度</option>
+		    		<option>同一自然日</option>
+		    		<option>同一自然月</option>
+		    		<option>同一自然年</option>
+		    	</select>
+		    </div>
+		    <div class="timeSpan" *ngIf='isTimeSpan'>
+		    	<span>≤</span>
+		    	<input type="date" />
+		    	<p>天</p>
+		    </div>
+		    <div class="nextStepBox">
+		    	<div class="nextStep">
+		    		<span (click)="isTextShow=false;isShow=true" >下一步</span>
+		    	</div>
+		    </div>
+	    </div>
+	   <Health_management_rules_list *ngIf="isShow"></Health_management_rules_list>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+    <div id="drgusPage">
+      <div class="drgus-navbar">
+        <div  id="navbar"  class="fn-clear">
+             <div class="fn-left">
+                <span class="nav-product-name">逸曜合理用药系统</span>
+             </div>
+       		   <ul>
+                <li><a>用药干预</a></li>
+                <li><a>用药点评</a></li>
+                <li><a>用药分析</a></li>
+                <li ><a class="checked">医保控费</a></li>
+                <li><a>医保报表</a></li>
+             </ul>
+             <div class="fn-right">
+                <span class="fn-right nav-setting fn-MR40 fn-ML20 fn-MT18"></span>
+                <span class=" fn-right nav-icon fn-ML15 fn-MT18 ">
+                </span>
+             </div>
+             <div class="fn-right" >
+                <span class="fn-right caret fn-disInBl fn-MT20 fn-ML5"></span>
+                <span class="fn-right fn-LH50 fn-ML12 fn-color-FFF fn-FS14">admin</span>
+                <span class="fn-right user-icon fn-MT10 fn-ML12"></span>
+             </div>
+
+        
+        </div>
+      </div>
+      <div class="main-content " style="min-height: calc(100vh - 50px);">
+     
+        <div class="content-left" style="height: calc(100vh - 50px);">
+              <div class="menu-button">
+                <span class="menu-button-bar"></span>
+                <span class="menu-button-bar" style="margin: 3px 0;"></span>
+                <span class="menu-button-bar"></span>
+              </div>
+             <ul *ngFor="let menu of menuService.menus" >
+                <li >
+                    <a class="sec-nav" (click)="selectMenu = menu;"  [class.checked]="menu == selectMenu" >
+                        <span class="slide-icon icon-{{menu.id}} " ></span>
+                        <span routerLink={{menu.resource}}>{{menu.title}}</span>
+                        <i class="arrow-icon " *ngIf="menu.subMenus.length > 0" [class.opened]="menu==selectMenu"></i>
+                    </a>
+                 
+                </li>
+                <ul *ngIf="selectMenu == menu" class="nav nav-pills nav-stacked" >
+                    <li *ngFor="let submenu of menu.subMenus">
+                        <a  class="thr-nav" routerLink={{submenu.resource}} (click)="selectedThrMenu=submenu;" [class.checked-thr]="submenu == selectedThrMenu">
+                          <span class="list-icon"></span>
+                          {{submenu.title}}
+                        </a>
+                    </li>
+                </ul>
+              </ul>
+        </div>
+        <div class="content-right" style="min-height: calc(100vh - 50px);width:calc(100vw - 160px - (100vw - 100%));" >
+             <div id="page" style="min-height: calc(100vh - 50px);" >
+                <div class=" top-single-padding" >
+                    <span>首页</span>
+                    <span *ngFor="let navibar of naviBar">
+                        <span>> </span><span>{{navibar.name}}</span>
+                    </span>
+                </div>
+                <div class="component-container">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+ 
+		
+
+

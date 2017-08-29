@@ -1,0 +1,99 @@
+<div class="flex column flexbox versionManagementBigNigBox" style="height: calc(100vh - 95px);">
+    <div class="form-inline search-panel fixed-header versionManagementBox">
+        <div class="form-inline content-search versionManagementReturnBox">
+             <div class="versionManagementReturnImg">
+             	 <img src="images/u2388.svg" />
+             </div>
+             <div class="versionManagementReturn" routerLink='/page/MedicareCatalog/material/Material-component'>
+             	<span>返回</span>
+             </div>
+        </div>
+        <div class="form-inline content-search versionManagementAddBox">
+             <div class="versionManagementAddImg">
+             	 <img src="images/u6735.png"/>
+             </div>
+             <div class="versionManagementAdd" (click)=addVersionManagement() (click)="isShow=true;isTextShow=false;isChangeHide=false">
+             	<span>添加</span>
+             </div>
+        </div>
+    </div> 
+    <div class="message-container-details fn-PL70  fn-PR70">
+			<table class="table table-bordered tableTitle">
+				<tbody>
+					    <tr class="trHeader">
+					    	<td width="20%"><b>材料目录版本</b></td>
+					    	<td width="20%"><b>说明</b></td>
+					    	<td width="20%"><b>对应规则版本</b></td>
+					    	<td width="20%"><b>最近修改日期</b></td>
+					    	<td width="20%"><b>操作</b></td>
+					    </tr>
+						<tr *ngFor="let optRecipe of optRecipeList;let i = index;" class="trContent">
+									<td width="20%">{{optRecipe.summary}}</td>
+									<td width="20%">{{optRecipe.description}}</td>
+									<td width="20%">{{optRecipe.mrvName}}</td>
+									<td width="20%">{{optRecipe.gmtModified|date:"yyyy-MM-dd"}}</td>
+									<td width="20%" style="cursor: pointer;color: blue;" (click)=choose(optRecipeList[i].id,i) (click)="isChangeShow=false;isChangeHide=true">
+										修改
+									</td>
+						</tr>
+				</tbody>
+			</table>
+	</div>
+</div>
+
+<!--弹窗浮动层  添加版本-->  
+ <my-dialog class="show-dialog1">
+ 	 <template #dialogTemplate let-dialogModel>
+        <div class="datatype-choosing1" *ngIf="isShow">
+              <div class="chooseVersion">请在历史版本基础上进行修改</div>
+              <div class="chooseVersionContent">
+              	<div class="versionContentBox">
+              		<span>选择版本:</span>
+              			<select [(ngModel)]="activeIdx" (change)="optionClick($event)" >
+	              			  <option *ngFor="let obj of selectList;let i = index;" value="{{i}}" >{{obj.name}}</option>
+              		     </select>
+              	</div>
+              </div>
+              <div class="chooseVersionButtom">
+              	 <button class="chooseSure" (click)="dialogModel.customModule = false;">取消</button>
+              	 <button class="chooseSure" (click)="isShow=false;isTextShow=true" (click) = sureAddVersion()>确认</button>
+              </div>
+        </div>
+        <div class="datatype-choosing2" *ngIf="isTextShow">
+              <div class="chooseVersion">版本信息</div>
+              <div class="chooseVersionContent">
+              	<div class="versionContentBox">
+              		<span>版本添加:</span>          
+              		<input type="text" [disabled]="isEdit" [(ngModel)]="name"/>
+              	
+              	</div>
+              	<div class="versionContentBox">
+              		<span>版本说明:</span>
+              		<textarea [(ngModel)]="description"></textarea>
+              	</div>
+              </div>
+              <div class="chooseVersionButtom" (click)=saveVersionManagement()>
+              	 <button class="chooseSure" (click)="dialogModel.customModule = false;">取消</button>
+              	 <button class="chooseSure" (click)=saveVersion() (click)="isShow=false;isTextShow=false">保存</button>
+              </div>
+        </div>
+        <div class="datatype-choosing2" *ngIf="isChangeHide">
+              <div class="chooseVersion">版本信息</div>
+              <div class="chooseVersionContent">
+              	<div class="versionContentBox">
+              		<span>版本修改:</span>          
+              		<input type="text" [disabled]="isEdit" [(ngModel)]="modificationsummary"/>
+              	
+              	</div>
+              	<div class="versionContentBox">
+              		<span>版本说明:</span>
+              		<textarea [(ngModel)]="modificationdescription"></textarea>
+              	</div>
+              </div>
+              <div class="chooseVersionButtom">
+              	 <button class="chooseSure" (click)="dialogModel.customModule = false;">取消</button>
+              	 <button class="chooseSure" (click)=modificationSave() (click)="dialogModel.customModule = false;">保存</button>
+              </div>
+        </div>
+    </template>
+ </my-dialog>

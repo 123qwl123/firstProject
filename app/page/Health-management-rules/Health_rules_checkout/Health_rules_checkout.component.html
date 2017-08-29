@@ -1,0 +1,114 @@
+<div class="flex column flexbox RulesCheckoutBigBox">
+	<!--头部信息-->
+    <div class="form-inline search-panel fixed-header RulesCheckoutHeaderBox">
+        <div class="form-inline content-search gray-underline versionManagementReturnBox">
+             <div class="versionManagementReturnImg">
+             	 <img src="../image/u2388.svg" />
+             </div>
+             <div class="versionManagementReturn">
+             	<span>返回</span>
+             </div>
+        </div>
+    </div> 
+    <!--患者信息-->
+    <div class="information_for_patients_box">
+    	<span>患者信息</span>
+    	<div class="information_for_patients_content">
+    		<div class="information_for_patients_content_box">
+    			<span>参保险种：</span>
+    			<div class="informationTitle">杭州市医保</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>患者年龄：</span>
+    			<div class="informationTitle">20-35岁</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>患者性别：</span>
+    			<div class="informationTitle">男</div>
+    		</div>
+    		<div class="information_for_patients_content_box">
+    			<span>人员类别：</span>
+    			<div class="informationTitle">退伍军人</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>孕产信息：</span>
+    			<div class="informationTitle">否</div>
+    		</div>
+    	</div>
+    </div>
+    <!--就诊信息-->
+       <div class="information_for_patients_box seeDoctorInformationBigBox">
+    	<span>就诊信息</span>
+    	<div class="information_for_patients_content seeDoctorInformation">
+    		<div class="information_for_patients_content_box">
+    			<span>医院类别：</span>
+    			<div class="informationTitle">**医院</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>使用项目：</span>
+    			<div class="informationTitle">项目名称；项目名称</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2 timeRange">
+    			<span>就诊时间范围：</span>
+    			<div class="informationTitle">同一自然日</div>
+    		</div>
+    		<div class="information_for_patients_content_box">
+    			<span>医院级别：</span>
+    			<div class="informationTitle">三甲</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>使用材料：</span>
+    			<div class="informationTitle">材料名称；材料名称</div>
+    		</div>
+    		<div class="information_for_patients_content_box gestationInfomation">
+    			<span>就诊次数：</span>
+    			<div class="informationTitle">1次</div>
+    		</div>
+    		<div class="information_for_patients_content_box">
+    			<span>就诊方式：</span>
+    			<div class="informationTitle">门诊</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>诊断疾病：</span>
+    			<div class="informationTitle">疾病名称；疾病名称</div>
+    		</div>
+    		<div class="information_for_patients_content_box gestationInfomation">
+    			<span>使用药物：</span>
+    			<div class="informationTitle">药物名称</div>
+    		</div>
+    	</div>
+    </div>
+    <!--医生信息-->
+     <div class="information_for_patients_box doctorInformationBigBox">
+    	<span>医生信息</span>
+    	<div class="information_for_patients_content doctorInformationBigBoxContent">
+    		<div class="information_for_patients_content_box">
+    			<span>职称：</span>
+    			<div class="informationTitle">医生职称</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>科室：</span>
+    			<div class="informationTitle">科室名称；科室名称</div>
+    		</div>
+    		<div class="information_for_patients_content_box information_for_patients_content_box2">
+    			<span>职业范围：</span>
+    			<div class="informationTitle">职业范围</div>
+    		</div>
+    	</div>
+    </div>
+    <!--取消  下一步-->
+    <div class="RulesCheckoutFooterBigBox">
+    	<div class="RulesCheckoutCancel" (click)=ReturnModification()>
+    		<span>返回修改</span>
+    	</div>
+    	<div class="RulesCheckoutNextStep" (click)=LookRecipe()>
+    		<span>查看处方</span>
+    	</div>
+    	<div class="RulesCheckoutNextStep" (click)=SimulateMeddle()>
+    		<span>模拟干预</span>
+    	</div>
+    </div>
+</div>
+
+
+

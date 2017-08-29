@@ -1,0 +1,72 @@
+<div class="single-margin relative flexbox max-height700">
+		    	<div class="warimgDoctorSelectBox" *ngIf="isShow">
+		    		<div class="cancelGroupImg">
+		    			<img src="image/u6914.png" (click)="isShow=false;"/>
+		    		</div>
+		    		<div class="warimgDoctorSelect02">
+		    			<div class="title">就诊来源：</div>  
+		    			
+		    			<input type="text" class="selectList" (click)=checkboxData()/>
+		    			<div class="selectListContent" *ngIf="selectHide">
+		    				<div class="selectListData selectListData01">
+		    					<p (click)=deletDataList()>X</p>
+		    				</div>
+		    				<div class="selectListData">
+		    					<input type="checkbox" class="checkbox"/>
+		    				    <div class="Listdata">门诊</div>
+		    				</div>
+		    				<div class="selectListData">
+		    					<input type="checkbox" class="checkbox"/>
+		    				    <div class="Listdata">门诊</div>
+		    				</div>
+		    				<div class="selectListData">
+		    					<input type="checkbox" class="checkbox"/>
+		    				    <div class="Listdata">门诊</div>
+		    				</div>
+		    				<div class="selectListData">
+		    					<input type="checkbox" class="checkbox"/>
+		    				    <div class="Listdata">门诊</div>
+		    				</div>
+		    			</div>
+		    		</div>
+			    	<select class="warimgDoctorSelect">
+			    		<option>就诊来源</option>
+			    		<option>所有来源</option>
+			    		<option>急门部</option>
+			    		<option>门诊</option>
+			    		<option>急诊</option>
+			    		<option>住院</option>
+			    	</select>
+			    	<select class="warimgDoctorSelect">
+			    		<option>规则类型</option>
+			    		<option>所有类型</option>
+			    		<option>药物规则</option>
+			    		<option>项目规则</option>
+			    		<option>材料规则</option>
+			    		<option>疾病规则</option>
+			    		<option>就诊规则</option>
+			    	</select>
+			    	<select class="warimgDoctorSelect">
+			    		<option>使用理由</option>
+			    	</select>
+			    	<select class="warimgDoctorSelect">
+			    		<option>显示等级</option>
+			    		<option>0级</option>
+			    		<option>1级</option>
+			    		<option>2级</option>
+			    		<option>3级</option>
+			    		<option>4级</option>
+			    		<option>5级</option>
+			    		<option>6级</option>
+			    		<option>7级</option>
+			    		<option>8级</option>
+			    		<option>9级</option>
+			    	</select>
+			    	<select class="warimgDoctorSelect">
+			    		<option>执行操作</option>
+			    		<option>拦截</option>
+			    		<option>警示</option>
+			    		<option>隐藏</option>
+			    	</select>
+		    	</div><br />
+</div>

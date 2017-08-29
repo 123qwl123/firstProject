@@ -1,0 +1,48 @@
+<div class="TypeOfInsuranceCatalogLookInsuranceBigBox">
+	<div class="TypeOfInsuranceCatalogLookInsuranceHeaderBox">
+		<div class="form-inline content-search ReturnBox">
+             <div class="versionManagementReturnImg" routerLink='/Types_of_insurance_catalog'>
+             	 <img src="../images/u2388.svg" />
+             </div>
+             <div class="versionManagementReturn" routerLink='/Types_of_insurance_catalog'>
+             	<span>返回</span>
+             </div>
+        </div>
+        <div class="insuranceNameBox">
+        	<span>险种名称：</span>
+        	<span>{{auditPlan.name}}</span>
+        </div>
+        <div class="insuranceExplainBox">
+        	<span>险种简介：</span>
+        	<span>{{auditPlan.description}}</span>
+        </div>
+        <!--报销分类-->
+        <div class="applyClassifyBox">
+        	<span>险种分类：</span>
+        	<span>单方限制——指中药饮片中单方非医保报销目录，须自费，报销比例0%</span>   
+        	<p>单复方限制——特指中药饮片中单复方非医保报销目录，须自费，报销比例0%</p>
+        	<div class="applyClassifyContentBox">
+        		<div class="addInsuranceContent">
+	        			<div class="addInsuranceContentBox">
+	        				<div>{{infoactive}} —— </div>
+	        				<div>{{descriptionactive}}, </div>
+	        				<div>投保比例{{rateactive}} </div>
+	        	        </div>
+	        	</div>
+        	</div>
+        </div>
+        <div class="personnerClassesBox">
+        	<p>投保人员类别：</p>
+        	<div class="personnerClassesContentBox">
+        		<span>{{auditPlan.personCategory}}</span>
+        	</div>
+        </div>
+        <div class="compoundCountBox">
+        	<span>复方的味数：</span>
+        	<span>{{auditPlan.drugNumbers}}</span>
+        </div>
+        <div class="modificationBox" routerLink='/page/Types_of_insurance_catalog/Types_of_insurance_catalog/Types_of_insurance_catalog/Types_of_insurance_catalog_addInsurance'>
+        	<span>修改</span>
+        </div>
+	</div>
+</div>

@@ -1,0 +1,93 @@
+
+<div class="HealthRulesVersion">
+	<div class="HealthRulesVersionHeader">
+		<img src="../image/u2388.svg" />
+		<span (click)=returnVersionManagement()>返回</span>
+	</div>
+	<div class="versionName">
+		<span>版本名称：</span>
+		<input type="text" />
+	</div>
+	<div class="suggestInformation">
+		<span>建议信息：</span>
+		<textarea></textarea>
+	</div>
+	<div class="sicknessCatalogVersion">
+		<span>关于疾病目录版本：</span>
+		<p>v2.0</p>
+		<div class="choose" (click)=choose()>
+			<div class="chooseTilte">选择</div>
+		</div>
+	</div>
+	<div class="sicknessCatalogVersion">
+		<span>关于药品目录版本：</span>
+		<div class="choose" (click)=choose()>
+			<div class="chooseTilte">选择</div>
+		</div>
+	</div>
+	<div class="sicknessCatalogVersion">
+		<span>关于项目目录版本：</span>
+		<div class="choose" (click)=choose()>
+			<div class="chooseTilte">选择</div>
+		</div>
+	</div>
+	<div class="sicknessCatalogVersion">
+		<span>关于材料目录版本：</span>
+		<div class="choose" (click)=choose()>
+			<div class="chooseTilte">选择</div>
+		</div>
+	</div>
+	<div class="HealthRulesVersionSave">
+		<span>保存</span>
+	</div>
+</div>
+
+<!--弹窗浮动层  添加版本-->  
+ <my-dialog class="show-dialog">
+ 	 <template #dialogTemplate let-dialogModel>
+        <div class="datatype-choosing">
+              <div class="chooseVersion">选择目录版本</div>
+              <div class="chooseVersionContent">
+              	<div class="versionContentBox">
+              		<div class="chooseVersionWord">
+              			<span>v1.0</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.1</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.2</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.3</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.4</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.5</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.6</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v1.7</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v2.0</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v2.1</span>
+              		</div>
+              		<div class="chooseVersionWord">
+              			<span>v2.2</span>
+              		</div>
+              	</div>
+              </div>
+              <div class="chooseVersionButtom">
+              	 <button class="chooseCancel" (click)="dialogModel.customModule = false;">取消</button>
+              	 <button class="chooseSure">确认</button>
+              </div>
+        </div>
+    </template>
+ </my-dialog>

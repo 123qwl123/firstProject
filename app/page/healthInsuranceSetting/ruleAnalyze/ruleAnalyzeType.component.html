@@ -1,0 +1,88 @@
+
+<div class="catalogObject fn-clear" style="height: calc(100vh - 95px);">
+    <div class="catalogObject-content" style="min-width:1100px;width:calc(100vw - 190px);height: calc(100vh - 95px);">
+
+		<div class="container-left fn-left" style="height:calc(100vh - 95px)">
+			<div class="catalog-tree" style="border:none;margin-bottom:15px;">
+				<div class="search-panel form-inline">
+			            <div class="form-group ">
+			                <label class="control-label catalog-name fn-W48">字典值：</label>
+			                <div class="input-group fn-MR10 fn-W242">
+			                    <div class="input-group-addon"></div>
+			                    <input class="form-control ng-valid " type="text" placeholder="请输入关键字" [(ngModel)]="searchWord"/>
+			                </div>
+			            	<button type="submit" class="btn btn-primary" (click)="search()" >搜索</button>
+			            </div>
+				</div>
+			</div>
+			<div class="catalog-tree" style="height:calc(100vh - 166px);">
+				<div id="data-catalog-list"  class="catalog-list" style="height:calc(100vh - 178px);padding-top:25px;position:relative;">
+						<div *ngIf="isHint" class="handleHint">父级节点为分析类型，子节点为提示类型 <span (click)="isHint=false;">X</span></div>
+			            <Tree [nodes]="rulesAnalysisData"  class="my-tree" [options]="options" (onActivate)="chooseNode($event)">
+			                <template #treeNodeTemplate let-node>
+			                    <div >
+			                        <span [class.child-icon]="node.data.type == 1" [class.nodes-icon]="node.data.type != 1" ></span>
+			                        <span>{{node.data.name || node.data.bookName}}</span>
+			                        <span *ngIf="node.data.type !== 1 && node.data == curNode" (click)="add(node)"><img src="../../../../images/add.svg" style="vertical-align: -2px;"></span>
+			                        <span *ngIf="node.data == curNode && node.data.type != 2" (click)="delData(node)"><img src="../../../../images/commonicons/delete-icon.svg" style="vertical-align: -1px;"></span>
+			                    </div>
+			                </template>
+			            </Tree>
+		        </div>
+			</div>
+		</div>
+		<div class="fn-left fn-W20 container-center" style="height: calc(100vh - 95px);"></div>
+		<div class="container-right fn-left" style="height: calc(100vh - 95px);min-width:600px;">
+				<div *ngIf="curNode  || isAdd"  class="add-catalog-form fn-W580 fn-PT15" >
+								<div class="form-group" >
+									<label class=" col-md-2 control-label">
+											<em>*</em>类型名称:
+									</label>
+									<div class="form-inline" *ngIf="!isAdd">
+
+										<div style="height:30px;line-height:28px;" *ngIf="backCurrentData.category == 'TS'">提示类型</div>
+										<div style="height:30px;line-height:28px;" *ngIf="backCurrentData.category == 'FX'">分析类型</div>
+									</div>
+									<div class="form-inline" *ngIf="isAdd">
+									    <div class="fn-disInBl fn-MR20">
+											<input type="radio" class="form-control radio" name="rulesAnalysis" value="FX" (change)="rulesAnalysis=$event.target.value;">分析类型
+									    </div>
+									     <div class="fn-disInBl">
+											<input type="radio" class="form-control radio" name="rulesAnalysis" value="TS" (change)="rulesAnalysis=$event.target.value;">提示类型
+									    </div>	
+									</div>
+								</div>
+								
+								<div class="form-group" >
+									<label class=" col-md-2 control-label control-textarea-label">
+											<em>*</em>目录名称:
+									</label>
+									<div class="form-inline">
+											<input type="text" (blur)="testIptName(backCurrentData.summary)" (input)="testName()" (focus)="testRulesAnalysisName()" class="form-control input-sm fn-W478"  [(ngModel)]="backCurrentData.summary"  maxlength="10" placeholder="1~10个汉字"/>
+									</div>
+								</div>
+								<div class="form-group form-textarea">
+									<label class=" col-md-2 control-label">
+											类型说明:
+									</label>
+									<div class="form-inline">
+											<textarea  class="form-control fn-W478" maxlength="500" style="height:100px;max-height:100px;max-width: 478px;" [(ngModel)]="backCurrentData.description" placeholder="选填,1-300个字的纯文本内容">{{backCurrentData.description}}</textarea>
+									</div>
+								</div>
+								
+								<div class="form-group" style="margin-top:68px;">
+									<label class=" col-md-2 control-label">
+											
+									</label>
+									<div class="form-inline">
+										<button class="btn btn-primary fn-W80"  type="submit"  (click)="save()">保存</button>
+									</div>
+								</div>		
+				</div>
+		</div>
+
+    </div>
+<div>
+<my-dialog class="show-dialog">
+	
+</my-dialog>

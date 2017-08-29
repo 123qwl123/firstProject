@@ -1,0 +1,329 @@
+.managementRulesHeaderBox{
+	width: 1001px;
+	height: 68px;
+	margin-left: 20px;
+	padding-top: 20px;
+}
+.control-label{
+	margin-left: 15px;
+}
+.changeRules{
+	width: 240px;
+	height: 25px;
+	cursor: pointer;
+}
+.versionManagementBigBox{
+	width: 120px;
+	height: 30px;
+	float: left;
+	margin-left: 20px;
+}
+.versionManagementImg img{
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.versionManagementTitle{
+	width: 90px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.RulesCheckBigBox{
+	width: 120px;
+	height: 30px;
+	float: left;
+	margin-left: 5px;
+}
+.RulesCheckImg img{
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.RulesCheckTitle{
+	width: 90px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+/*//圆圈*/
+.HealthRulesRadiusBigBox{
+	width: 1000px;
+	height: 230px;
+	margin-left: 20px;
+	position: relative;
+}
+.HealthRulesRadiusBigBox .form-group{
+	width: 145px;
+	height: 180px;
+	border-radius: 5px;
+	float: left;
+	padding-top:22px;
+	color: white;
+	font-family: STHeitiSC-Medium;
+	
+	
+}
+.radius1{
+	position: absolute;
+	left: 40px;
+	top: 20px;
+	background:#5DC2F0 100%;
+}
+.radius2{
+	position: absolute;
+	left: 225px;
+	top: 20px;
+	background:#83B4FF 100%;
+}
+.radius3{
+	position: absolute;
+	left: 410px;
+	top: 20px;
+	background:#41CEAB 100%;
+}
+.radius4{
+	position: absolute;
+	left: 585px;
+	top: 20px;
+	background:#7E74D2 100%;
+}
+.radius5{
+	position: absolute;
+	left: 760px;
+	top: 20px;
+	background:#F16D67 100% ;
+}
+/*//圆圈里面的内容*/
+.HealthRulesRadiusHeaderBox{
+	width: 100%;
+	height: 40px;
+}
+.HealthRulesRadiusHeaderBox img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-left: 15px;
+}
+.HealthRulesRadiusBigBox .radiusTitle{
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 20px;	
+}
+.HealthRulesRadiusBigBox .HealthCount{
+	margin-top: 20px;
+	font-size: 28px;
+	text-align: center;	
+}
+.HealthRulesRadiusBigBox .HealthRules{
+	margin-top: 25px;
+	font-size: 14px;
+	text-align: center;
+}
+/*//下面的大内容*/
+.HealthBigBox{
+	width: 1000px;
+	height: 721px;
+	border: 1px solid;
+	margin-left:20px;
+	background: white;
+}
+/*左边*/
+.HealthBigLeftBox{
+	width:220px;
+	height:600px;
+	margin-left:20px;
+	margin-top:20px;
+	float: left;
+}
+.managementRules{
+	background: #E3E3E3 100%;
+	border: 1px solid #666;
+}
+.managementCatalog{
+	/*background:yellowgreen;*/
+	border: 1px solid #666;
+	border-left: none;
+}
+.RulesCatalogContentBox{
+	width: 220px;
+	height: 200px;
+	float: left;
+}
+/*左边公共样式*/
+.managmentBox{
+	width: 110PX;
+	height: 35px;
+	float: left;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.HealthBigLeftBox span{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 13px;
+	font-size: 13px;
+	font-family: STHeitiSC-Light;
+	color:#262626 100%;
+	line-height: 35px;
+	margin-left: 45px;
+}
+/*添加规则*/
+.managementRulesAddRules{
+	width: 220px;
+	height: 30px;
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.managementRulesAddRules img{
+	display: block;
+	width: 15px;
+	height: 15px;
+	float: left;
+	position: absolute;
+	left: 120px;
+	top: 10px;
+	cursor: pointer;
+}
+.managementRulesAddRules span{
+	display:block;
+	width:53px;
+	height:12px;
+	font-family:STHeitiSC-Medium;
+	color: #515253 100%;
+	font-size: 12px;
+	float:left;
+	position: absolute;
+	left: 100px;
+	cursor: pointer;
+}
+.HealthBigLeftBox .line{
+	width: 220px;
+	height: 3px;
+	background:#EFEFEF 100%;
+	float: left;
+}
+/*竖线*/
+.HealthManagementLine{
+	width: 3px;
+	height: 702px;
+	margin-top: 10px;
+	border: 1px solid #E0E0E0 100%;
+	float: left;
+	margin-left:20px;
+	background: #E0E0E0;
+}
+/*右边*/
+.HealthBigRightBox{
+	width: 712px;
+	height: 600px;
+	margin-top: 20px;
+	margin-left:20px;
+	float: left;
+}
+/*右边头部内容*/
+/*时间修改*/
+.HealthBigRightChangeTime{
+	width: 240px;
+	height: 20px;
+	float: left;
+}
+.startTime{
+	display: block;
+	width: 60px;
+	height: 13px;
+	font-size: 13px;
+	line-height: 20px;
+	float: left;
+	margin-left: 10px;
+}
+/*最后修改人*/
+.HealthBigRightChangePerson{
+	width: 150px;
+	height: 20px;
+	float: left;
+	margin-left: 30px;
+}
+/*时间周期*/
+.timeCicle{
+	margin-top: 15px;
+}
+.timeCicle span{
+	text-indent: 25px;
+}
+.timeCicle div{
+	width: 80px;
+}
+/*已选择药物*/
+.alerdyChoice{
+	width: 220px;
+	margin-top: 15px;
+}
+.alerdyChoice div{
+	width: 120px;
+}
+/*后边的头部公共样式start*/
+.HealthBigRightHeaderBox span{
+	display: block;
+	width: 85px;
+	height: 13px;
+	font-size: 13px;
+	line-height: 20px;
+	float: left;
+}
+.the_same{
+	display: block;
+	width: 50px;
+	height: 13px;
+	font-size: 13px;
+	line-height: 20px;
+	float: left;
+	margin-left: 10px;
+}
+/*后边的头部公共样式end*/
+.HealthBigRightHeaderBox{
+	width: 624px;
+	height: 66px;
+	float: left;
+}
+.HealthBigRightBottomBox{
+	width: 712px;
+	height: 310px;
+	float: left;
+	margin-top:50px;
+	background: #E6F8FF 100%;
+	opacity: 0.34;
+	padding-top: 26px;
+}
+.HealthBigRightBottomBox p{
+	display: block;
+	font-family: STHeitiSC-Medium;
+	color: #306A84;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;
+}
+.HealthBigRightBottomBox span {
+	display: block;
+	padding-top: 221px;
+	margin-left: 11px;
+	font-family: STHeitiSC-Medium;
+	color: #515253;
+	font-size: 13px;
+	line-height: 22px;
+}

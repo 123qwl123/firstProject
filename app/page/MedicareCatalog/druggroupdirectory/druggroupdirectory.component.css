@@ -1,0 +1,15 @@
+.add-button{
+	position: absolute;
+	top:12px;
+	right:16px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.add-image{
+	display: inline-block;
+	width: 15px;
+	height:15px;
+	vertical-align: -2px;
+	margin-right:5px;
+	background: url('../../../images/add.svg') no-repeat center center;
+}

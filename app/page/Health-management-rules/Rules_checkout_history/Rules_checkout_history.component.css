@@ -1,0 +1,107 @@
+/*.message-container-details{
+	display: block;
+	width: 971px;
+	margin-top: 10px;
+}
+.tableTitle{
+	display: block;
+	width: 971px !important;
+	margin-left: 20px;
+}
+.message-container-details .table > tbody > tr > td{
+	display: block;
+	float: left;
+	text-align: center;
+	height: 45px;
+}
+.border{
+	border-right:1px solid #ddd;
+}*/
+
+
+.versionManagementBigNigBox{
+	width: 1001PX;
+	margin-left: 20px;
+	height:1177px;
+	margin-top: 20px;
+	background: white;
+}
+
+.versionManagementBox{
+	width: 971px;
+	height: 30px;
+}
+.versionManagementReturnBox{
+	width: 300px;
+	height: 30px;
+	float: left;
+}
+.versionManagementReturnImg img{
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.versionManagementReturn{
+	width: 60px;
+	height: 22px;
+	float: left;
+	cursor: pointer;
+}
+.versionManagementReturn span{
+	display: block;
+    text-align: center;
+    line-height: 22px;
+}
+
+.versionManagementAddBox{
+	width: 70px;
+	height: 30px;
+	float: right;
+}
+.versionManagementAddBox img{
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-top: 16px;
+	cursor: pointer;
+}
+.versionManagementAdd{
+	width: 24px;
+	height: 12px;
+	float: left;
+	margin-top: 16px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.versionManagementAdd span{
+	display: block;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+}
+/*//表格*/
+.message-container-details{
+	display: block;
+	width: 971px;
+	margin-top: 10px;
+}
+.tableTitle{
+	display: block;
+	width: 971px !important;
+	margin-left: 20px;
+}
+.message-container-details .table > tbody > tr > td{
+	display: block;
+	float: left;
+	text-align: center;
+	height: 45px;
+}
+.border{
+	border-right:1px solid #ddd;
+}
+

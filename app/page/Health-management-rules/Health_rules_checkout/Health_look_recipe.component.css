@@ -1,0 +1,130 @@
+/*头部盒子*/
+.HealthLookRecipeHeaderBox{
+	width: 1000px;
+	height: 125px;
+	background: #FFFFFF 100%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+/*日期*/
+.HealthLookRecipeHeaderTimeBox{
+	width: 330px;
+	margin-left: 40px;
+}
+.HealthLookRecipeHeaderTimeBox span{
+	width: 39px;
+}
+.HealthLookRecipeHeaderTimeBox input{
+	width: 130px;
+}
+/*诊断*/
+.HealthLookRecipeHeaderDiagnoseBox{
+	width: 200px;
+	margin-left: 40px;
+}
+.HealthLookRecipeHeaderDiagnoseBox span{
+	width: 39px;
+}
+.HealthLookRecipeHeaderDiagnoseBox input{
+	width: 130px;
+}
+/*处方金额*/
+.HealthLookRecipeHeaderRecipeWareBox{
+	width: 240px;
+	margin-left: 100px;
+}
+.HealthLookRecipeHeaderRecipeWareBox span{
+	width: 65px;
+}
+.HealthLookRecipeHeaderRecipeWareBox input{
+	width: 63px;
+	margin-right: 5px;
+}
+/*处方号*/
+.HealthLookRecipeHeaderDrugAnalyseBox{
+	width: 210px;
+	margin-left:30px;
+}
+.HealthLookRecipeHeaderDrugAnalyseBox span{
+	width: 48px;
+}
+.HealthLookRecipeHeaderDrugAnalyseBox input{
+	width: 130px;
+}
+/*//患者号*/
+.patientIndex{
+	margin-left: 115px;
+}
+.patientIndex span{
+	width: 46px;
+}
+/*科室*/
+.office{
+	margin-left: 90px;
+}
+.office span{
+	width: 30px;
+}
+/*搜索*/
+.searchHealthLookRecipe{
+	width: 50px;
+	height: 28px;
+	background: #4EB7E0 100%;
+	border-radius: 4px;
+	margin-left: 20px;
+	float: left;
+	margin-top: 20px;
+}
+.searchHealthLookRecipe span{
+	display: block;
+	width: 26px;
+	height: 13px;
+	font-family: STHeitiSC-Light;
+	color: #FFFFFF 100%;
+	font-size: 13px;
+	line-height: 28px;
+	text-align: center;
+	margin-left: 10px;
+}
+/*头部盒子公共样式*/
+.HealthLookRecipeHeaderBox .recipeBox{
+	height: 30px;
+	margin-top: 15px;
+	float: left;
+}
+.HealthLookRecipeHeaderBox input{
+	display: block;
+	height: 28px;
+	float: left;
+	text-indent: 10px;
+}
+.HealthLookRecipeHeaderBox span{
+	display: block;
+	float: left;
+	height: 13px;
+	font-family: STHeitiSC-Medium;
+	color:#515253 100%;
+	font-size: 13px;
+	line-height: 30px;
+	margin-right: 5px;
+}
+.HealthLookRecipeHeaderBox p{
+	width: 12px;
+	height: 12px;
+	float: left;
+	display: block;
+	margin-left: 5px;
+	line-height: 30px;
+}
+/*表格样式*/
+.HealthLookRecipeTableContentBox{
+	width: 1000px;
+	height: 500px;
+	background: white;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+
+
+

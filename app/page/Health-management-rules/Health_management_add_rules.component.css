@@ -1,0 +1,130 @@
+.HealthManagementAddRulesBigBox{
+	float: left;
+}
+/*头部*/
+.HealthManagementAddRulesHeaderBox{
+	font-family: STHeitiSC-Light;
+	display: block;
+	float: left;
+}
+.HealthManagementAddRulesHeaderBox p{
+	color: #000000 100%;
+	font-size: 14px;
+    float: left;
+}
+.HealthManagementAddRulesHeaderBox span{
+	color: #515253 100%;
+	font-size: 13px;
+	margin-left:500px;
+	float: left;
+}
+.HealthManagementAddRulesHeaderBox div{
+	color: #000000 100%;
+	font-size: 13px;
+	margin-left:20px;
+	float: left;
+	line-height: 16px;
+}
+/*灰线*/
+.HealthManagementAddRulesBigBox .line{
+	width: 717px;
+	height: 3px;
+	border: 1px solid #E0E0E0;
+	float: left;
+}
+/*//下面的框*/
+.HealthManagementAddRulesBottomBox{
+	width: 717px;
+	height: 500px;
+	border: 1px solid;
+	float: left;
+	padding-top: 20px;
+}
+.HealthManagementAddRulesMiddleBox{
+	float: left;
+}
+.HealthManagementAddRulesListBox{
+	float: left;
+}
+/*时间周期*/
+.timeCicle{
+	float: left;
+}
+.timeCicle span{
+	display: block;
+	font-family: STHeitiSC-Medium;
+	color: #515253 100%;
+	font-size: 13px;
+	margin-left: 100px;
+	float: left;
+}
+.timeCicle select{
+	display: block;
+	width: 327px;
+	height: 28px;
+	background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    float: left;
+}
+/*选择时间跨度*/
+.timeSpan{
+	display: inline-block;
+	width: 717px;
+	height: 30px;
+	float: left;
+	margin-top:30px;
+}
+.timeSpan span{
+	display: block;
+	margin-left: 250px;
+	font-size: 15px;
+	width: 13px;
+	height: 13px;
+	line-height: 30px;
+	float: left;
+}
+.timeSpan input{
+	display: block;
+	margin-left: 10px;
+	font-size: 15px;
+	width: 150px;
+	height: 28px;
+	line-height: 30px;
+	float: left;
+}
+.timeSpan p{
+	display: block;
+	margin-left: 10px;
+	font-size: 13px;
+	width: 15px;
+	height: 15px;
+	line-height: 30px;
+	color: black;
+	float: left;
+}
+/*下一步*/
+.nextStepBox {
+	width: 712px;
+	height: 30px;
+	float: left;
+	margin-top: 50px;
+}
+.nextStep{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	background: #61BBE2;
+    border: 1px solid #61BBE2;
+    border-radius: 4px;
+    margin-left: 150px;
+    float: left;
+}
+.nextStep span{
+	display: block;
+	font-family: STHeitiSC-Light;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+}
+

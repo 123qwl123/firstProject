@@ -1,0 +1,98 @@
+/* 药品目录样式 */
+.readOnly{
+	readOnly = true;
+}
+.pr{
+	position: relative;
+}
+.pa{
+	position: absolute;
+}
+.location{
+	left: 350px;
+	top: 0;
+	width: 75px;
+}
+.sp-font{
+	font-size: 13px;
+	top: 6px;
+	left: 15px;
+}
+/* 右侧表格样式 */
+.add-catalog-form .form-group .control-label{
+	margin-top: 6px;
+    margin-right: 5px;
+    padding: 0;
+    text-align: right;
+  	font-weight:normal; 
+  	font-size: 13px;
+}
+.add-catalog-form .form-group .control-label em{
+	padding: 0 5px;
+    font-weight: 800;
+    color: #f00;
+}
+.add-catalog-form .form-group .form-inline .btn-primary{
+	background: #4EB7E0;
+	border-color:#4EB7E0;
+	height:30px;
+	padding: 5px 10px;
+	font-size: 13px;
+}
+.add-catalog-form .form-group{
+	margin-bottom: 15px;
+	height: 30px;
+}
+.add-catalog-form .form-group input{
+	height:30px;
+	padding:5px 10px;
+}
+.add-catalog-form .form-group .chooseWord{
+	height:34px;
+	padding:5px 10px;
+}
+.add-catalog-form  .form-group  .control-textarea-label{
+	/*margin-top: 0;*/
+   
+}
+.add-catalog-form .form-group .form-inline textarea{
+	padding: 6px;
+}
+.add-catalog-form  .form-textarea{
+	margin-bottom:85px;
+}
+.add-catalog-form  .form-group .form-reimbursement{
+	width:100px;float: left;
+}
+
+/* 关联属性样式 */
+.associateProp{
+	width:230px;
+	height:34px;
+	position:relative;
+	z-index: 1000;
+}
+.associateProp .associateProp-content{
+	position: absolute;
+	left:0;
+	top:33px;
+	width:400px;
+	height:400px;
+	background: #fff;
+	border:1px solid #ddd;
+	z-index: 999;
+	padding: 15px;
+}
+.associateProp .associateProp-title{
+	height:30px;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+}
+#associateProp-tree{
+	height:355px;
+	width:100%;
+	overflow: auto;
+}
+

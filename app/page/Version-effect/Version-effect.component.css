@@ -1,0 +1,266 @@
+/*头部*/
+.yibao{
+	width: 400px;
+	height: 28px;
+}
+
+
+.single-margin{
+	margin-left: 50px;
+}
+.versionEffectBox{
+	width: 1000px;
+	height: 30px;
+}
+.versionEffectBoxTiitle span{
+	float: left;
+	margin-right: 15px;
+	line-height: 30px;
+}
+.modification{
+	color: blue;
+	cursor: pointer;
+}
+.last{
+	border: none;
+	width: 173px;
+}
+.flex2{
+	width: 1000px;
+	height: 50px;
+	border: 1px solid;
+}
+.flex2 .flex1-header{
+	width: 1000px;
+	height: 50px;
+	background: white;
+}
+.flex2 .flex1-header-content{
+	width:165px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	font-size: 15px;
+	border-right: 1px solid;
+}
+/*//添加浮动框*/
+.show-dialog{
+	width: 300px;
+}
+.datatype-choosing{
+    position: fixed;left: 50%;top: 50%;z-index: 1050;
+    width: 300px;padding: 25px;
+    background: #fff;
+    transform: translate(-50%, -50%);
+}
+.dialogTitle{
+	width: 220px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: black;
+}
+.dialogTime{
+	width: 260px;
+	height: 30px;
+}
+.dialogTime span{
+	color: #666;
+	font-size: 14px;
+	line-height: 30px;
+	float: left;
+	display: block;
+}
+.immediateEffect{
+	line-height: 30px;
+	float: left;
+	display: block;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.selectVersion{
+	width: 300PX;
+	height: 40px;
+}
+.selectVersion span{
+	color: #666;
+	font-size: 14px;
+	line-height: 40px;
+	float: left;
+	display: block;	
+}
+.selectVersion select{
+	float: left;
+	display: block;
+	width: 150px;
+	height: 25px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.changeTime{
+	width: 250px;
+	height: 25px;
+	float: left;
+	line-height: 25px;
+	margin-top: 5px;
+	text-align: center;
+	text-indent: -8px;
+	margin-bottom: 10px;
+	margin-left: -12px;
+}
+.changeTime1{
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	margin: 5px;
+	float: left;
+}
+.changeTime1 .changeTime1Select{
+	display: block;
+	width: 60px;
+	height: 27px;
+	margin-left: 70px;
+	float: left;
+}
+.versionColon{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+	margin-left: 5px;
+	font-size: 20px;
+}
+.changeTime1 .changeTime1Select1{
+	display: block;
+	width: 60px;
+	height: 27px;
+	margin-left: 3px;
+	float: left;
+}
+.mt10{
+	width: 60px;
+	height: 40px;
+	border: 1px solid;
+	margin-left: 30px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+.true{
+	background: blue;
+}
+/*表格*/
+table
+{
+    border-collapse:collapse;
+    width: 100%;background: #fff;
+    margin: 0;
+}
+    table th{
+        max-height: 58px;
+        background: #f9f9f9;
+    }
+table, td, th
+{
+    border:1px solid #dfdfdf;
+    padding:10px;
+}
+.HealthInsurancePolicyFileTableBox td{
+	height: 30px;
+	text-align: center;
+}
+.HealthInsurancePolicyFileTableBox{
+	text-align: center;
+}
+.HealthInsurancePolicyFileTableBox a{
+	text-decoration: none;
+	color: blue;
+	display: block;
+	float: left;
+}
+.HealthInsurancePolicyFileTableBox span{
+	display: block;
+	width: 10px;
+	height: 10px;
+	float: left;
+}
+table
+{
+    border-collapse:collapse;
+    width: 100%;background: #fff;
+    margin: 0;
+}
+    table th{
+        max-height: 58px;
+        background: #f9f9f9;
+    }
+table, td, th
+{
+    border:1px solid #dfdfdf;
+    padding:10px;
+}
+
+.table-drug tr.selected, .table-drug tr.checked,
+.table-drug tr.selected, .table-drug tr.focus{
+    background: #e3f2ff;
+}
+.table-drug tr:hover{
+    background: #e3f2ff;
+    cursor: pointer;
+}
+.input-page{
+    width:50px;
+}
+
+.table-body td{
+    font-weight: 500;
+}
+my-tbody,tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.hide-scroll{
+    margin-right: -17px;overflow-y: scroll;
+}
+.fixedContainer{
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    overflow: hidden;
+}
+
+#pageBreak{
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+#pageBreak .curpage{
+    border: 1px solid #ddd;
+    min-width: 40px;display: inline-block;border-radius: 4px;
+    line-height: 28px;text-align: center;
+}
+/**
+* my-tbody
+*/
+.table-bordered>my-tbody>tr>td, .table-bordered>my-tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+}
+.table>my-tbody>tr>td, .table>my-tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+#pageBreak{
+	overflow: hidden;
+	display: none;
+}

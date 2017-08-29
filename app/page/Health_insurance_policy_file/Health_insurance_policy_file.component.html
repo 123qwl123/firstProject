@@ -1,0 +1,36 @@
+<div class="HealthInsurancePolicyFileBigBox">
+	<!--//头部-->
+	<div class="HealthInsurancePolicyFileHeaderBox">
+		<div class="form-inline content-search versionManagementAddBox">
+	             <div class="versionManagementAddImg" (click)=addFile()>
+	             	 <img src="image/u6735.png"/>
+	             </div>
+	             <div class="versionManagementAdd" (click)=addFile()>
+	             	<span>添加</span>
+	             </div>
+	    </div>
+	 </div>
+	 <!--表格-->
+     
+     <div class="flex1 text-center message-container-details fn-PL70  fn-PR70 HealthInsurancePolicyFileTableBox">
+			<my-table [table]="recipeListTable">
+				<template #tableTemplate let-tableinfo>
+						<tr style="text-align: center;"  *ngFor="let item of tableinfo.dataList;let i = index;">
+									<td width="20%">{{item.summary}}</td>
+									<td width="16%">{{item.source}}</td>
+									<td width="14%">{{item.ativeDate}}</td>
+									<td width="20%">{{item.gmtModified}}</td>
+									<td width="20%">{{item.gmtCreate}}</td>
+									<td  width="10%" style="cursor: pointer;color: blue;">
+										<a (click)="goToEditPage(item.id)">修改</a>
+										<span>|</span>
+										<a (click)="deleteData(item)">删除</a>
+									</td>
+						</tr>
+						 <tr *ngIf="!(tableinfo.dataList&&tableinfo.dataList.length)">
+                              <td colspan="100" style="padding: 10px 0;">没有找到相关数据</td>
+                         </tr>
+				</template>
+			</my-table>
+	</div>
+</div>
